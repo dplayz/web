@@ -3,6 +3,7 @@
 background: linear-gradient(90deg, rgba(8,19,253,1) 24%, rgba(45,139,252,1) 69%);">
 	<head>
 	<title>dplayz Games</title>
+	<link rel="stylesheet" href="index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body style="background-color:transparent;">
@@ -53,50 +54,22 @@ background: linear-gradient(90deg, rgba(8,19,253,1) 24%, rgba(45,139,252,1) 69%)
 				</div>
 
 		
-		<style>
-		.collapsible {
-		text-align:center;
-		display:flex;
-		align-items:center;
-		justify-content:center;
-  		padding:5px;
-  		margin-left:auto;
-  		margin-right:auto;
-  		background-color: #777;
-  		color: white;
-  		width:50%;
-  		cursor: pointer;
-  		padding: 18px;
-  		border: 10px;
-  		text-align: left;
-  		outline: none;
-		}
+			</style>
+			<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
 
-		.active, .collapsible:hover {
-  		background-color: #555;
-		}
-
-		.content {
-  		display: none;
-  		overflow:hidden;
-  		background-color: transparent;
-		}
-		</style>
-		<script>
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
-  		coll[i].addEventListener("click", function() {
+			for (i = 0; i < coll.length; i++) {
+  			coll[i].addEventListener("click", function() {
     		this.classList.toggle("active");
     		var content = this.nextElementSibling;
     		if (content.style.display === "block") {
       		content.style.display = "none";
-    	} else {
-      		content.style.display = "block";
-    		}
-  		});
-		}
+    		} else {
+      			content.style.display = "block";
+    			}
+  			});
+			}
 		</script>
 		<br>
 		<br>
