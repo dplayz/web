@@ -1,0 +1,115 @@
+<DOCTYPE html>
+<html style="background: rgb(8,19,253);
+background: linear-gradient(90deg, rgba(8,19,253,1) 24%, rgba(45,139,252,1) 69%);">
+	<head>
+	<title>dplayz Games</title>
+	<link rel="stylesheet" href="../style/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body style="background-color:transparent; margin:0;">
+		<nav class="navbar">
+			<div class="brand-title"><img src="logo.png" width="100px" style="margin-top:2%;"></div>
+			<a href="#" class="toggle-button">
+			  <span class="bar"></span>
+			  <span class="bar"></span>
+			  <span class="bar"></span>
+			</a>
+			<div class="navbar-links">
+			  <ul>
+				<li><a href="../">Home</a></li>
+				<li><a href="https://blog.dplayzgames06.tk">Blog</a></li>
+				<li><a href="../info/">Info</a></li>
+			  </ul>
+			</div>
+		  </nav>
+		
+		<div style="text-align:center;">
+		<img src="logo.png" width="240px" style="margin-top:2%;">	
+		</div>
+		<br>
+		<button type="button" class="collapsible">Social Media Channels</button>
+			<div class="content">
+				<table style="margin-left:auto; margin-right:auto;">
+					<tr><th><img src="../images/fb.png"></th><td><a href="https://facebook.com/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
+					<tr><th><img src="../images/twch.png"></th><td><a href="https://twitch.tv/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
+					<tr><th><img src="../images/yt.png"></th><td><a href="https://youtube.com/channel/UCNTjCvAvlLzmEKIZQ5BpoGQ" target="_parent">/dplayz Games</a></td>
+					<tr><th><img src="../images/yt.png"></th><td><a href="https://youtube.com/channel/UCRYtnbYg1N9AKS7LQ88N5Qg" target="_parent">dplayz Games VOD</a></td>
+				</table>
+			</div>
+		<button type="button" class="collapsible">Other Accounts</button>
+			<div class="content">
+  				<table style="margin-left:auto; margin-right:auto;">
+					<tr><th><img src="../images/twt.png"></th><td><a href="https://twitter.com/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
+					<tr><th><img src="../images/tktk.png"></th><td><a href="https://tiktok.com/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
+					<tr><th><img src="../images/ig.png"></th><td><a href="https://instagram.com/dplayzgames06" target="_parent">/dplayzgames06</a></td>
+					<tr><th><img src="../images/gh.png"></th><td><a href="https://github.com/dplayz" target="_parent">/dplayz</a></td>
+					<tr><th><img src="../images/glb.png"></th><td><a href="https://gitlab.com/dplayz" target="_parent">/dplayz</a></td>
+				</table>
+			</div>
+		<button type="button" class="collapsible">Play With Me!</button>
+			<div class="content">
+				<table style="margin-left:auto; margin-right:auto;">
+					<tr><th><img src="../images/mcbe.png"></th><td>dpG06#4539</td></tr>
+					<tr><th><img src="../images/osu.png"></th><td><a href="https://osu.ppy.sh/users/19989687">/users/19989687</a></td></tr>
+					<tr><th><img src="../images/osudroid.png"></th><td><a href="https://ops.dgsrz.com/profile.php?uid=279686">/profile.php?uid=279686</a></td></tr>
+					<tr><th><img src="../images/malody.png"></th><td><a href="http://m.mugzone.net/accounts/user/685440">/accounts/user/685440</a></td></tr>
+					<tr><th><img src="../images/rblx.png"></th><td><a href="https://www.roblox.com/users/650986696/profile">/users/650986696/profile</a></td></tr>
+				</table>
+			</div>
+		<button type="button" class="collapsible" id="contact-info">Contact Info</button>
+				<div class="content">
+					<table style="margin-left:auto; margin-right:auto;">
+						<tr><th>Blog</th><td><a href="https://blog.dplayzgames06.tk">blog.dplayzgames06.tk</a></td></tr>
+						<tr><th>Mail</th><td><a href="mailto:dp@dplayzgames06.tk">dp@dplayzgames06.tk</a></td></tr>
+						<tr><th>Blog Feed</th><td><a href="https://blog.dplayzgames06.tk/feeds/posts/default">Atom </a> | <a href="https://blog.dplayzgames06.tk/feeds/posts/default?alt=rss">RSS</a> | <a href="http://feeds.feedburner.com/dplayzgamesblog">Feedburner Feed</a></td></tr>
+						<tr><th><img src="../images/msgr.png"></th><td><a href="http://m.me/dplayzgames06">/dplayzgames06</a></td></tr>
+						<tr><th><img src="../images/dscrd.png"></th><td><a href="https://discord.gg/zj88wBrENV">/zj88wBrENV</a></td></tr>
+					</table>
+				</div>
+			
+			</style>
+			<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+  			coll[i].addEventListener("click", function() {
+    		this.classList.toggle("active");
+    		var content = this.nextElementSibling;
+    		if (content.style.display === "block") {
+      		content.style.display = "none";
+    		} else {
+      			content.style.display = "block";
+    			}
+  			});
+			}
+		</script>
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var header = document.getElementById("myHeader");
+			var sticky = header.offsetTop;
+			
+			function myFunction() {
+			  if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			  } else {
+				header.classList.remove("sticky");
+			  }
+			}
+			</script>
+			<script>
+			const toggleButton = document.getElementsByClassName('toggle-button')[0]
+			const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+			
+			toggleButton.addEventListener('click', () => {
+			  navbarLinks.classList.toggle('active')
+			})
+			</script>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</body>
+</html>
