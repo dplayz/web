@@ -5,25 +5,16 @@ background: linear-gradient(90deg, rgba(8,19,253,1) 24%, rgba(45,139,252,1) 69%)
 	<title>dplayz Games</title>
 	<link rel="stylesheet" href="../style/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script>  
+			$(function(){ 
+			$("#pageheader").load("../header.html");  
+		}); 
+		</script>
+	<noscript><meta http-equiv="refresh" content="0;url=../error/disabledjs.html"></noscript>  
 	</head>
-	<body style="background-color:transparent; margin:0;">
-		<nav class="navbar">
-			<div class="brand-title"><img src="../images/logo.png" width="100px" style="margin-top:2%;"></div>
-			<a href="#" class="toggle-button">
-			  <span class="bar"></span>
-			  <span class="bar"></span>
-			  <span class="bar"></span>
-			</a>
-			<div class="navbar-links">
-			  <ul>
-				<li><a href="../">Home</a></li>
-				<li><a href="https://blog.dplayzgames06.tk">Blog</a></li>
-				<li><a href="../info/#contact-info">Info</a></li>
-			  </ul>
-			</div>
-			
-		  </nav>
-		
+	<body>
+		<div id="pageheader"></div> 
 		<div style="text-align:center;">
 		<img src="../images/logo.png" width="240px" style="margin-top:2%;">	
 		</div>
