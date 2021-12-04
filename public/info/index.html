@@ -4,12 +4,14 @@
 	<title>dplayz Games</title>
 	<link rel="stylesheet" href="../style/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<!--Script to call the header-->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<script>  
 			$(function(){ 
 			$("#pageheader").load("../header.html");  
-		}); 
+			}); 
 		</script>
+	<!--Redirect non javascript users into the error page-->
 	<noscript><meta http-equiv="refresh" content="0;url=../error/disabledjs.html"></noscript>  
 	</head>
 	<body>
@@ -58,44 +60,22 @@
 					</table>
 				</div>
 			
-			</style>
+			<!--Script for collapsable content. Will be moved into a separate file-->
 			<script>
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
-
-			for (i = 0; i < coll.length; i++) {
-  			coll[i].addEventListener("click", function() {
-    		this.classList.toggle("active");
-    		var content = this.nextElementSibling;
-    		if (content.style.display === "block") {
-      		content.style.display = "none";
-    		} else {
-      			content.style.display = "block";
-    			}
-  			});
-			}
-		</script>
-		<script>
-			window.onscroll = function() {myFunction()};
+				var coll = document.getElementsByClassName("collapsible");
+				var i;
 			
-			var header = document.getElementById("myHeader");
-			var sticky = header.offsetTop;
-			
-			function myFunction() {
-			  if (window.pageYOffset > sticky) {
-				header.classList.add("sticky");
-			  } else {
-				header.classList.remove("sticky");
-			  }
-			}
-			</script>
-			<script>
-			const toggleButton = document.getElementsByClassName('toggle-button')[0]
-			const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-			
-			toggleButton.addEventListener('click', () => {
-			  navbarLinks.classList.toggle('active')
-			})
+					for (i = 0; i < coll.length; i++) {
+					coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+						if (content.style.display === "block") {
+							content.style.display = "none";
+						} else {
+							content.style.display = "block";
+						}
+					});
+				}
 			</script>
 		<br>
 		<br>
