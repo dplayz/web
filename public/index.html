@@ -5,12 +5,14 @@ background: linear-gradient(90deg, rgba(8,19,253,1) 24%, rgba(45,139,252,1) 69%)
 	<title>dplayz Games</title>
 	<link rel="stylesheet" href="../style/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		<script>  
-			$(function(){ 
-			$("#pageheader").load("../header.html");  
-		}); 
-		</script>
+	<!--Script to call the header-->
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script>  
+	$(function(){ 
+	$("#pageheader").load("../header.html");  
+	}); 
+	</script>
+	<!--Redirect non javascript users into the error page-->
 	<noscript><meta http-equiv="refresh" content="0;url=../error/disabledjs.html"></noscript>  
 	</head>
 	<body>
