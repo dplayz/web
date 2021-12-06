@@ -1,3 +1,8 @@
+@font-face {
+	font-family: BloggerSans;
+	src: url(../fonts/Blogger_Sans.otf);
+  }  
+
 html{
 	background: linear-gradient(90deg, rgba(8,19,253,1) 24%, rgba(45,139,252,1) 69%);
 }
@@ -5,7 +10,7 @@ body{
 	background:transparent; 
 	margin:0;
 	padding:0;
-	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-family: BloggerSans, Roboto, Helvetica, Arial, sans-serif;
 }
 a:link {
 	color: skyblue;
