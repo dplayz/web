@@ -2,26 +2,19 @@
 	font-family: BloggerSans;
 	src: url(../fonts/Blogger_Sans.otf);
   }  
-
+/*page-light-html */
 html{
 	background: linear-gradient(90deg, rgba(8,19,253,1) 24%, rgba(45,139,252,1) 69%);
 }
+/*page-light-body*/
 body{
 	background:transparent; 
 	margin:0;
 	padding:0;
 	font-family: BloggerSans, Roboto, Helvetica, Arial, sans-serif;
+	text-align:center;
 }
-a:link {
-	color: skyblue;
-	background-color: transparent;
-	text-decoration: none;
-}
-a:visited {
-  	color: skyblue;
- 	background-color: transparent;
- 	text-decoration: none;
-}
+/*pagecontent-light-collapsablecontent | collapsable content for lists */
 .collapsible {
 	text-align:center;
 	display:flex;
@@ -40,7 +33,7 @@ a:visited {
   	outline: none;
 }
 .active, .collapsible:hover {
-  	background-color: #555;
+  	background-color: #fff;
 }
 .content {
   	display: none;
@@ -48,18 +41,20 @@ a:visited {
   	background-color: transparent;
 }
 
+/*pageheader-light | Page header, parent style of the header  */
 .navbar {
 	display: flex;
-	position: relative;
+	position: fixed;
+	width:100%;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #333;
-	color: white;
+	background-color: #ffffff;
+	color: black;
 }
 .brand-title {
 	font-size: 1.5rem;
 	margin: .5rem;
-}		
+}
 .navbar-links {
 	height: 100%;
 }
@@ -68,21 +63,54 @@ a:visited {
 	margin: 0;
 	padding: 0;
 }
+.navbar-links ul li {
+	text-align: center;
+	background-color:#fff;
+}
 .navbar-links li {
 	list-style: none;
 }
 .navbar-links li a {
 	display: block;
 	text-decoration: none;
-	color: white;
+	color: black;
 	padding: 1rem;
 }
-.navbar-links li:hover {
-	background-color: #555;
+.navbar-links li a:hover {
+	background-color: #ddd;
+}
+.dropdown, .dropbtn{
+	position: flex;
+	display: inline-block;
+	text-decoration:none;
+	color:black;
+  }
+.navbar .dropdown-content {
+	display: none;
+	background-color: #fff;
+	min-width: 160px;
+	z-index: 1;
+  }
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}  
+.navbar-links .dropdown:hover .dropdown-content{display: block;}
+.navbar-links .dropdown-content {
+	position: absolute;
+	background-color: #ffffff;
+	min-width: 160px;
+	z-index: 1;
+}
+div.navbar-links-last{
+	position: absolute;
+	right:0;
 }
 .toggle-button {
 	position: absolute;
-	top: 2.25rem;
+	top: 1.25rem;
 	right: 1rem;
 	display: none;
 	flex-direction: column;
@@ -93,7 +121,7 @@ a:visited {
 .toggle-button .bar {
 	height: 3px;
 	width: 100%;
-	background-color: white;
+	background-color: blue;
 	border-radius: 10px;
 }
 @media (max-width: 800px) {
@@ -121,9 +149,33 @@ a:visited {
 	}
 	.navbar-links.active {
 		display: flex;
-		}
+	}
+	.navbar .dropdown-content {
+		position:relative;
+	}
 }
 
+/*pagecontent-light-buttonanchor | Parent button*/
+a.button {
+	display:inline-block;
+	background-color:#32373C;
+	color:white;
+    padding: 8px 20px;
+	margin:5px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+	border-radius:25px;
+	border:2px solid black;
+}
+
+/*pagecontent-light-border | Border Default Style */
+div.border{
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+}
+/*pagecontent-light-error | Error page style */
 #errormessage { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
 #errormessage h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
 #errormessage h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
@@ -132,3 +184,39 @@ a:visited {
 #errormessage a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
 #errormessage, #errormessage a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
 #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+/*pagecontent-both-column | Column Style */
+.row {
+	display: flex;
+  }
+  .column {
+	flex: 50%;
+	margin-top:auto;
+	margin-bottom:auto;
+	padding:15px;
+}
+@media (max-width: 600px) {
+	.row {
+		display: block;
+	}
+}
+/*pagecontent-both-padding | Padding Default Style */
+div.padding{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+div.padding-bottom{
+	padding-bottom:100px;
+}
+div.pagetitle{
+	padding-top:100px;
+}
+/*pagecontent-both-table | Table Default Style */
+table, th, td {
+	border: 2.5px solid black;
+	border-radius:10px;
+	border-collapse: collapse;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding:5px;
+}
