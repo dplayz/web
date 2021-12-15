@@ -1,52 +1,77 @@
 <DOCTYPE html>
-<html class="page">
-	<head>
-	<title>dplayz Games</title>
-	<link rel="stylesheet" href="../style/main.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--Script to call the header-->
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-		<script>  
-			$(function(){ 
-			$("#pageheader").load("../header.html");  
-			}); 
-		</script>
-	<!--Redirect non javascript users into the error page-->
-	<noscript><meta http-equiv="refresh" content="0;url=../error/disabledjs.html"></noscript>  
-	</head>
-	<body>
-		<div id="pageheader"></div> 
-		<div style="text-align:center;">
-		<img src="../images/logo.png" width="240px" style="margin-top:2%;">	
+	<html>
+		<head>
+			<!--<meta name="theme-color" content="#32e532">-->
+			<link rel="stylesheet" href="/style/main.css">
+			<link rel="stylesheet/less" type="text/css" href="/style/main.less" />
+			<script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="manifest" href="manifest.json">
+			<script src="./scripts/browser-update.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			<!--Hide all content and display error message-->
+			<noscript><div id="errormessage">
+				<h2>Error</h2>
+				<h1>Javascript is off</h1><p>Website cannot be displayed properly because Javascript is turned off</p>
+				<h3>What should I do?</h3><p>Enable Javascipt, and reload this page</p>
+			</div><style>#pagecontent{display:none;}</style></noscript>
+			<!--Script to call the header-->
+			<script>$(function(){ $("#pageheader").load("/header.html");$("#pagecontent-notice").load("/notice.html");$("#pagefooter").load("/footer.html");});</script>
+			<title>dplayz Games</title>
+			<!-- Meta Tag | Primary Meta Tags -->
+			<meta name="title" content="Info | dplayz Games">
+			<meta name="description" content="This is the official website of dplayz Games where information is posted">
+			<!-- Meta Tag | Open Graph / Facebook -->
+			<meta property="og:type" content="website">
+			<meta property="og:url" content="https://dplayzgames06.tk">
+			<meta property="og:title" content="Info | dplayz Games">
+			<meta property="og:description" content="This is the official website of dplayz Games where information is posted">
+			<meta property="og:image" content="https://files.dplayzgames06.tk/web/logo.png">
+			<!-- Meta Tag | Twitter -->
+			<meta property="twitter:card" content="summary_large_image">
+			<meta property="twitter:url" content="https://dplayzgames06.tk">
+			<meta property="twitter:title" content="Info| dplayz Games">
+			<meta property="twitter:description" content="This is the official website of dplayz Games where information is posted">
+			<meta property="twitter:image" content="https://files.dplayzgames06.tk/web/logo.png">
+		</head>
+		<body>
+			<div id="pageheader"></div>
+			<div id="pagecontent">
+			<div class="pagetitle padding-bottom">
+			</div>
+			<img src="/images/logo.png" width="240px" style="margin-top:2%;">	
+		</div>
+		<br>
+			<div style="text-align:center;">	
 		</div>
 		<br>
 		<button type="button" class="collapsible">Social Media Channels</button>
 			<div class="content">
 				<table style="margin-left:auto; margin-right:auto;">
-					<tr><th><img src="../images/fb.png"></th><td><a href="https://facebook.com/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
-					<tr><th><img src="../images/twch.png"></th><td><a href="https://twitch.tv/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
-					<tr><th><img src="../images/yt.png"></th><td><a href="https://youtube.com/channel/UCNTjCvAvlLzmEKIZQ5BpoGQ" target="_parent">/dplayz Games</a></td>
-					<tr><th><img src="../images/yt.png"></th><td><a href="https://youtube.com/channel/UCRYtnbYg1N9AKS7LQ88N5Qg" target="_parent">dplayz Games VOD</a></td>
+					<tr><th><img src="/images/fb.png"></th><td><a href="https://facebook.com/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
+					<tr><th><img src="/images/twch.png"></th><td><a href="https://twitch.tv/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
+					<tr><th><img src="/images/yt.png"></th><td><a href="https://youtube.com/channel/UCNTjCvAvlLzmEKIZQ5BpoGQ" target="_parent">/dplayz Games</a></td>
+					<tr><th><img src="/images/yt.png"></th><td><a href="https://youtube.com/channel/UCRYtnbYg1N9AKS7LQ88N5Qg" target="_parent">dplayz Games VOD</a></td>
 				</table>
 			</div>
 		<button type="button" class="collapsible">Other Accounts</button>
 			<div class="content">
   				<table style="margin-left:auto; margin-right:auto;">
-					<tr><th><img src="../images/twt.png"></th><td><a href="https://twitter.com/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
-					<tr><th><img src="../images/tktk.png"></th><td><a href="https://tiktok.com/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
-					<tr><th><img src="../images/ig.png"></th><td><a href="https://instagram.com/dplayzgames06" target="_parent">/dplayzgames06</a></td>
-					<tr><th><img src="../images/gh.png"></th><td><a href="https://github.com/dplayz" target="_parent">/dplayz</a></td>
-					<tr><th><img src="../images/glb.png"></th><td><a href="https://gitlab.com/dplayz" target="_parent">/dplayz</a></td>
+					<tr><th><img src="/images/twt.png"></th><td><a href="https://twitter.com/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
+					<tr><th><img src="/images/tktk.png"></th><td><a href="https://tiktok.com/dplayzgames06" target="_parent">/dplayzgames06</a></td></tr>
+					<tr><th><img src="/images/ig.png"></th><td><a href="https://instagram.com/dplayzgames06" target="_parent">/dplayzgames06</a></td>
+					<tr><th><img src="/images/gh.png"></th><td><a href="https://github.com/dplayz" target="_parent">/dplayz</a></td>
+					<tr><th><img src="/images/glb.png"></th><td><a href="https://gitlab.com/dplayz" target="_parent">/dplayz</a></td>
 				</table>
 			</div>
 		<button type="button" class="collapsible">Play With Me!</button>
 			<div class="content">
 				<table style="margin-left:auto; margin-right:auto;">
-					<tr><th><img src="../images/mcbe.png"></th><td>dpG06#4539</td></tr>
-					<tr><th><img src="../images/osu.png"></th><td><a href="https://osu.ppy.sh/users/19989687">/users/19989687</a></td></tr>
-					<tr><th><img src="../images/osudroid.png"></th><td><a href="https://ops.dgsrz.com/profile.php?uid=279686">/profile.php?uid=279686</a></td></tr>
-					<tr><th><img src="../images/malody.png"></th><td><a href="http://m.mugzone.net/accounts/user/685440">/accounts/user/685440</a></td></tr>
-					<tr><th><img src="../images/rblx.png"></th><td><a href="https://www.roblox.com/users/650986696/profile">/users/650986696/profile</a></td></tr>
+					<tr><th><img src="/images/mcbe.png"></th><td>dpG06#4539</td></tr>
+					<tr><th><img src="/images/osu.png"></th><td><a href="https://osu.ppy.sh/users/19989687">/users/19989687</a></td></tr>
+					<tr><th><img src="/images/osudroid.png"></th><td><a href="https://ops.dgsrz.com/profile.php?uid=279686">/profile.php?uid=279686</a></td></tr>
+					<tr><th><img src="/images/malody.png"></th><td><a href="http://m.mugzone.net/accounts/user/685440">/accounts/user/685440</a></td></tr>
+					<tr><th><img src="/images/rblx.png"></th><td><a href="https://www.roblox.com/users/650986696/profile">/users/650986696/profile</a></td></tr>
 				</table>
 			</div>
 		<button type="button" class="collapsible" id="contact-info">Contact Info</button>
@@ -59,8 +84,7 @@
 						<tr><th><img src="../images/dscrd.png"></th><td><a href="https://discord.gg/zj88wBrENV">/zj88wBrENV</a></td></tr>
 					</table>
 				</div>
-			
-			<!--Script for collapsable content. Will be moved into a separate file-->
+				<!--Script for collapsable content. Will be moved into a separate file-->
 			<script>
 				var coll = document.getElementsByClassName("collapsible");
 				var i;
@@ -82,5 +106,7 @@
 		<br>
 		<br>
 		<br>
+		</div>
+		<div id="pagefooter"></div>
 	</body>
 </html>
