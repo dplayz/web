@@ -110,7 +110,7 @@ div.navbar-links-last{
 }
 .toggle-button {
 	position: absolute;
-	top: 1.25rem;
+	top: 2.25rem;
 	right: 1rem;
 	display: none;
 	flex-direction: column;
