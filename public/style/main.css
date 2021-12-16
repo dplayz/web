@@ -188,6 +188,141 @@ a:active, a:visited, a:hover, a:link{
 #errormessage a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
 #errormessage, #errormessage a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
 #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+
+@media (prefers-color-scheme: dark) {
+	/*page-dark-html*/
+	html{
+		background: linear-gradient(95deg, rgba(8,16,186,1) 24%, rgba(30,96,175, 1 ) 69%);
+	}
+	/*pagecontent-dark-anchor*/
+	a:link {
+		color: skyblue;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	a:visited {
+		  color: skyblue;
+		 background-color: transparent;
+		 text-decoration: none;
+	}
+	/*pageheader-dark | Page header style*/
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #333;
+		color: black;
+	}
+	.brand-title {
+		font-size: 1.5rem;
+		margin: .5rem;
+	}		
+	.navbar-links {
+		height: 100%;
+	}
+	.navbar-links ul {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-links li a {
+		display: block;
+		text-decoration: none;
+		background-color:#333;
+		color:#fff;
+		padding: 1rem;
+	}
+	.navbar-links ul li {
+	text-align: center;
+	background-color:#333;
+	}
+	.navbar-links li a:hover {
+		background-color: #888;
+	}
+	.dropdown, .dropbtn{
+		position: flex;
+		display: inline-block;
+		text-decoration:none;
+		color:black;
+		background-color:#555;
+	  }
+	.navbar .dropdown-content {
+		display: none;
+		background-color: #555;
+	  }
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}  
+	.navbar-links .dropdown:hover .dropdown-content{display: block;}
+	.navbar-links .dropdown-content {
+		position: absolute;
+		background-color: #555;
+		z-index: 1;
+	}
+	.toggle-button .bar {
+		height: 3px;
+		width: 100%;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+	@media (max-width: 800px) {
+		.navbar {
+			flex-direction: column;
+			align-items: flex-start;
+			}
+		.toggle-button {
+			display: flex;
+			}
+		.navbar-links {
+			display: none;
+			width: 100%;
+			}
+				
+		.navbar-links ul {
+			width: 100%;
+			flex-direction: column;
+		}
+		.navbar-links ul li {
+			text-align: center;
+		}
+		.navbar-links ul li a {
+			padding: .5rem 1rem;
+		}
+		.navbar-links.active {
+			display: flex;
+		}
+		.navbar .dropdown-content {
+			position:relative;
+		}
+	}
+	/*pagecontent-dark-buttonanchor | Parent button*/
+	a.button {
+		background-color:#32373C;
+		color:white;
+		border-radius:5px;
+		cursor:pointer;
+		border-radius:25px;
+		border:2px solid white;
+	}
+	/*pagecontent-dark-border | Border Default Style */
+	div.border{
+		border-top: 2px solid gray;
+		border-bottom: 2px solid gray;
+	}
+	/*pagecontent-dark-error | Error page style */
+	#errormessage { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
+	#errormessage h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
+	#errormessage h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+	#errormessage h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+	#errormessage p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+	#errormessage a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+	#errormessage, #errormessage a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+	#load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+}
+
 /*pagecontent-both-column | Column Style */
 .row {
 	display: flex;
