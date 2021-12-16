@@ -224,3 +224,7 @@ table, th, td {
 	text-align:center;
 	padding:5px;
 }
+/*pagecontent-both-table-no_border | No Table Border Default Style, inherits pagecontent-both-table (This is int)*/
+table.no-table-border, .no-table-border td, .no-table-border th {
+	border-style: none;
+}
