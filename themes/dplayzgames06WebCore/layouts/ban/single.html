@@ -1,0 +1,17 @@
+
+<DOCTYPE html>
+    <html>
+        <head>
+            {{ partial "head.html" . }}
+        </head>
+        <body>
+            <div id="pageheader">{{ partial "header.html" . }}</div>
+            <div class="pagetitle"><h1>{{ .Title }}</h1>Published {{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 PHST" }}
+            </div>
+            <div id="pagecontent">{{ .Content }}</div>
+            <div id="sidebar">
+                    {{ partial "sidebar.html" . }}
+            </div>
+            <div id="pagefooter">{{ partial "footer.html" . }}</div>
+        </body>
+    </html>

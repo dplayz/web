@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+  <meta name="theme-color" content="#32e532">
+  <link rel="stylesheet" href="/style/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <script src="./scripts/browser-update.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <noscript><div id="errormessage">
+      <h2>Error</h2>
+      <h1>Javascript is off</h1><p>Website cannot be displayed properly because Javascript is turned off</p>
+      <h3>What should I do?</h3><p>Enable Javascipt, and reload this page</p>
+  </div><style>#pagecontent{display:none;}</style></noscript>
+  <script>$(function(){$("#pagenotice").load("/global/notice.html");});</script>
+  <title>Ban Information | World of SteelCraft Beta</title>
+  
+  <meta name="title" content="Ban Information | World of SteelCraft Beta">
+  <meta name="description" content="This is the list of banned members with reasons and proof. You will not get banned for unreasonable reason.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:title" content="Ban Information | World of SteelCraft Beta">
+  <meta property="og:description" content="This is the list of banned members with reasons and proof. You will not get banned for unreasonable reason.">
+  <meta property="og:image" content="https://worldofsteelcraft.tk/images/preview.png">
+  
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ .Permalink }}">
+  <meta property="twitter:title" content="Ban Information | World of SteelCraft Beta">
+  <meta property="twitter:description" content="This is the list of banned members with reasons and proof. You will not get banned for unreasonable reason.">
+  <meta property="twitter:image" content="https://worldofsteelcraft.tk/images/preview.png">
+</head>
+{{ partial "header.html" . }}
+
+<div class="pagetitle border">
+  <h1>Ban Information</h1>
+  <p>This is the list of banned members with reasons and proof. You will not get banned for unreasonable reason.</p>
+  <p>Punishments subjects to the <b><a href="/rules">rules</a></b></p>
+  <p>If you think that you got wrongfully banned or want to get context or non-personal information, message us on our personal accounts or email <b><a href="mailto:admins@worldofsteelcraft.tk">admins@worldofsteelcraft.tk</a></b></p>
+</div>
+<div id="pagecontent">
+{{ range.Data.Pages }}
+<div class="padding">
+<article class="post-snippet">
+  <h3>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </h3>
+	<p>Published <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+		{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 PHST" }}
+	</time></p>
+  {{ .Content }}
+</article>
+</div>
+{{ end }}
+</div>
+<div id="pagefooter">
+{{ partial "footer.html" . }}
+</div>  

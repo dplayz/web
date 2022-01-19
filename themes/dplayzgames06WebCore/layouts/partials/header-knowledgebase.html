@@ -1,0 +1,47 @@
+<script>$(function(){$("#pagecontent-notice").load("/notice.html");});</script>
+<div id="pagecontent-notice"></div>
+<nav class="navbar navbar-knowledgebase">
+    <div class="brand-title"><a href="/"><img src="/images/logo.png" width="100px"></a><a href="/community/knowledgebase"><img src="/images/knowledgebaselightbulb.png" width="45px"></a></div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><div class="dropdown">
+          <a class="dropbtn">Community</a>
+          <div class="dropdown-content">
+            <a href="/community/ban">Banned Members</a>
+            <a href="/community/member-list">Member List</a>
+            <a href="/community/badge">Badge</a>
+            <a href="/community/knowledgebase">Knowledgebase</a>
+          </div>
+        </div></li>
+        <li><div class="dropdown">
+          <a class="dropbtn">Rules</a>
+          <div class="dropdown-content">
+            <a href="/rules/en">English Rules</a>
+            <a href="/rules/fil">Filipino Rules</a>
+            <a href="/rules/en-optimized">Basic English Rules</a>
+            <a href="/rules/fil-optimized">Basic Filipino Rules</a>
+          </div>
+        </div></li>
+        <li><div class="dropdown">
+          <a class="dropbtn">Server</a>
+          <div class="dropdown-content navbar-links-last">
+            <a href="/server/smp">WoSC SMP</a>
+            <a href="/server/smp/season-dl">Season Downloads</a>
+          </div>
+      </ul>
+    </div>
+  </nav>
+<script>
+  const toggleButton = document.getElementsByClassName('toggle-button')[0]
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+ 	
+ 	toggleButton.addEventListener('click', () => {
+	navbarLinks.classList.toggle('active')
+  })
+</script>
