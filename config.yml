@@ -9,6 +9,7 @@ enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+disqusShortname: dplayz-Games
 
 markup:
   goldmark:
