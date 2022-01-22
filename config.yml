@@ -1,0 +1,16 @@
+baseURL: 'https://dplayzgames06.tk/'
+languageCode: en-us
+title: dplayz Games
+theme: dplayzgames06WebCore
+params:
+  description: The official website of dplayz Games where information about him are posted.
+
+enableRobotsTXT: false
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

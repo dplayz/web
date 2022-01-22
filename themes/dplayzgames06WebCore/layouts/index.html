@@ -1,0 +1,21 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            {{ partial "head.html" . }}
+        </head>
+        <body class="with-sidebar">
+            <div id="pageheader">{{ partial "header.html" . }}</div>
+            <div id="pagecontent">
+                <div class="pagetitle padding-pagetitle">
+                </div>
+                <img src="../images/logo.png" width="240px" style="margin-top:2%;">	
+            </div>
+            <br>
+                <a class="button" href="/info">Info</a><a class="button" href="https://blog.dplayzgames06.tk">Blog</a>
+            </div>
+            <div id="sidebar">
+                {{ partial "sidebar.html" . }}
+            </div>
+            <div id="pagenotice"></div>
+        </body>
+    </html>

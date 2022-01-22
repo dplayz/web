@@ -1,42 +1,12 @@
-<DOCTYPE html>
-	<html>
-		<head>
-			<!--<meta name="theme-color" content="#32e532">-->
-			<link rel="stylesheet" href="/style/main.css">
-			<link rel="stylesheet/less" type="text/css" href="/style/main.less" />
-			<script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="manifest" href="manifest.json">
-			<script src="./scripts/browser-update.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-			<!--Hide all content and display error message-->
-			<noscript><div id="errormessage">
-				<h2>Error</h2>
-				<h1>Javascript is off</h1><p>Website cannot be displayed properly because Javascript is turned off</p>
-				<h3>What should I do?</h3><p>Enable Javascipt, and reload this page</p>
-			</div><style>#pagecontent{display:none;}</style></noscript>
-			<!--Script to call the header-->
-			<script>$(function(){ $("#pageheader").load("/header.html");$("#pagecontent-notice").load("/notice.html");$("#pagefooter").load("/footer.html");});</script>
-			<title>dplayz Games</title>
-			<!-- Meta Tag | Primary Meta Tags -->
-			<meta name="title" content="Info | dplayz Games">
-			<meta name="description" content="This is the official website of dplayz Games where information is posted">
-			<!-- Meta Tag | Open Graph / Facebook -->
-			<meta property="og:type" content="website">
-			<meta property="og:url" content="https://dplayzgames06.tk">
-			<meta property="og:title" content="Info | dplayz Games">
-			<meta property="og:description" content="This is the official website of dplayz Games where information is posted">
-			<meta property="og:image" content="https://files.dplayzgames06.tk/web/logo.png">
-			<!-- Meta Tag | Twitter -->
-			<meta property="twitter:card" content="summary_large_image">
-			<meta property="twitter:url" content="https://dplayzgames06.tk">
-			<meta property="twitter:title" content="Info| dplayz Games">
-			<meta property="twitter:description" content="This is the official website of dplayz Games where information is posted">
-			<meta property="twitter:image" content="https://files.dplayzgames06.tk/web/logo.png">
-		</head>
-		<body>
-			<div id="pageheader"></div>
-			<div id="pagecontent">
+---
+category: post
+title: ""
+date: 2022-01-20T10:52:59+08:00
+description: ""
+draft: false
+sitemapExclude: false
+---
+<div id="pagecontent">
 			<div class="pagetitle padding-pagetitle">
 			</div>
 			<img src="/images/logo.png" width="240px" style="margin-top:2%;">	
@@ -88,7 +58,6 @@
 			<script>
 				var coll = document.getElementsByClassName("collapsible");
 				var i;
-			
 					for (i = 0; i < coll.length; i++) {
 					coll[i].addEventListener("click", function() {
 					this.classList.toggle("active");
@@ -107,6 +76,3 @@
 		<br>
 		<br>
 		</div>
-		<div id="pagefooter"></div>
-	</body>
-</html>
