@@ -47,6 +47,7 @@ body{
 
 /*pageheader-light | Page header, parent style of the header  */
 .navbar {
+	display:flex;
 	position: fixed;
 	top:0;
 	width:100%;
@@ -55,7 +56,7 @@ body{
 	background-color: #ffffff;
 	color: black;
 }
-div.pageheaderpadding{margin-top:95px;}
+div.pageheaderpadding{margin-top:93px;}
 .brand-title {
 	font-size: 1.5rem;
 	margin: .5rem;
@@ -371,7 +372,7 @@ div.padding-bottom{
 	padding-bottom:100px;
 }
 div.pagetitle{
-	padding-top:100px;
+	padding-top:25px;
 }
 div.padding-post{padding-top:50px;padding-bottom:50px;}
 /*pagecontent-both-table | Table Default Style */

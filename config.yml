@@ -4,12 +4,12 @@ title: dplayz Games
 theme: dplayzgames06WebCore
 params:
   description: The official website of dplayz Games where information about him are posted.
-
+  pagePreviewImage: /images/preview.png
 enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
+disqusShortName: dplayz-games
 markup:
   goldmark:
     renderer:
