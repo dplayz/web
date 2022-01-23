@@ -6,10 +6,10 @@ description: ""
 draft: false
 sitemapExclude: false
 ---
-<div id="pagecontent">
-			<div class="pagetitle padding-pagetitle">
+<div id="pagecontent border">
+			<div class="pagetitle padding-pagetitle border">
 			</div>
-			<img src="/images/logo.png" width="240px" style="margin-top:2%;">	
+			<img src="/images/logo.png" width="240px" class="style-exclude"style="margin-top:2%;">	
 		</div>
 		<br>
 			<div style="text-align:center;">	
@@ -42,14 +42,15 @@ sitemapExclude: false
 					<tr><th><img src="/images/osudroid.png"></th><td><a href="https://ops.dgsrz.com/profile.php?uid=279686">/profile.php?uid=279686</a></td></tr>
 					<tr><th><img src="/images/malody.png"></th><td><a href="http://m.mugzone.net/accounts/user/685440">/accounts/user/685440</a></td></tr>
 					<tr><th><img src="/images/rblx.png"></th><td><a href="https://www.roblox.com/users/650986696/profile">/users/650986696/profile</a></td></tr>
+					<tr><th>CODM Garena</th><td>6927221836920913921</td></tr>
+					<tr><th>SSGF/SSJYP</th><td>diipii</td></tr>
 				</table>
 			</div>
 		<button type="button" class="collapsible" id="contact-info">Contact Info</button>
 				<div class="content">
 					<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
-						<tr><th>Blog</th><td><a href="https://blog.dplayzgames06.tk">blog.dplayzgames06.tk</a></td></tr>
 						<tr><th>Mail</th><td><a href="mailto:dp@dplayzgames06.tk">dp@dplayzgames06.tk</a></td></tr>
-						<tr><th>Blog Feed</th><td><a href="https://blog.dplayzgames06.tk/feeds/posts/default">Atom </a> | <a href="https://blog.dplayzgames06.tk/feeds/posts/default?alt=rss">RSS</a> | <a href="http://feeds.feedburner.com/dplayzgamesblog">Feedburner Feed</a></td></tr>
+						<tr><th>Blog Feed</th><td>| <a href="/blog/index.xml">RSS</a> | <a href="http://feeds.feedburner.com/dplayzgamesblog">Feedburner Feed</a></td></tr>
 						<tr><th><img src="../images/msgr.png"></th><td><a href="http://m.me/dplayzgames06">/dplayzgames06</a></td></tr>
 						<tr><th><img src="../images/dscrd.png"></th><td><a href="https://discord.gg/zj88wBrENV">/zj88wBrENV</a></td></tr>
 					</table>
