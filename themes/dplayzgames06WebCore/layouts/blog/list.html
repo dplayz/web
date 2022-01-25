@@ -14,8 +14,7 @@
   <h3>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h3>
-	<p>Published <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-		{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 PHST" }}
+	<div class="pagetitle"><h1>{{ .Title }}</h1><p>Published <span id="dateDisplay">{{ .PublishDate }}</span></p>
 	</time></p>
   {{ .Content }}
 </article>
