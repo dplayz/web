@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   
 media_folder: "static/uploads" 
-  public_folder: "uploads"
+public_folder: "uploads"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
