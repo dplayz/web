@@ -10,14 +10,12 @@
 <div id="pagecontent">
 {{ range.Data.Pages }}
 <div class="padding">
-<article class="post-snippet">
-  <h3>
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h3>
-	<div class="pagetitle"><h1>{{ .Title }}</h1><p>Published <span id="dateDisplay">{{ .PublishDate }}</span></p>
-	</time></p>
-  {{ .Content }}
-</article>
+  <article class="post-snippet">
+    <img src="{{if eq .Params.customPagePreviewImage true}}{{ .Params.customPagePreviewImageURL | absURL }}{{ else }}{{ .Site.Params.pagePreviewImage | absURL }}{{end}}">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <a href="{{ .RelPermalink }}" style="color:black;"><p>Published {{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}</p></a>
+    <a href="{{ .RelPermalink }}" style="color:black;">{{slicestr .Summary 0 200}}...</a>
+  </article>
 </div>
 {{ end }}
 </div>
