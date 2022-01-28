@@ -2,34 +2,5 @@
 <link rel="stylesheet" href="/style/main.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="manifest" href="manifest.json">
-<script src="./scripts/browser-update.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--Hide all content and display error message-->
-<noscript><div id="errormessage">
-    <h2>Error</h2>
-    <h1>Javascript is off</h1><p>Website cannot be displayed properly because Javascript is turned off</p>
-    <h3>What should I do?</h3><p>Enable Javascipt, and reload this page</p>
-</div><style>#pagecontent{display:none;}</style></noscript>
-<script>$(function(){$("#pagenotice").load("/global/notice.html");});</script>
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
-<!-- Meta Tag | Primary Meta Tags -->
-<meta name="title" content="{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}">
-<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
-{{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
-{{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
-<!-- Meta Tag | Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:title" content="{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}">
-<meta property="og:description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
-{{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
-{{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
-<meta property="og:image" content="{{if eq .Params.customPagePreviewImage true}}{{ .Params.customPagePreviewImageURL | absURL }}{{ else }}{{ .Site.Params.pagePreviewImage | absURL }}{{end}}">
-<!-- Meta Tag | Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="{{ .Permalink }}">
-<meta property="twitter:title" content="{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}">
-<meta property="twitter:description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
-{{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
-{{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
-<meta property="twitter:image" content="{{if eq .Params.customPagePreviewImage true}}{{ .Params.customPagePreviewImageURL | absURL }}{{ else }}{{ .Site.Params.pagePreviewImage | absURL }}{{end}}">
+{{ partial "head-scripts.html" . }}
+{{ partial "head-meta-tags.html" . }}
