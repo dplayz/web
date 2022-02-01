@@ -1,0 +1,8 @@
+[build.environment] 
+  TZ='Asia/Manila' 
+  HUGO_VERSION = "0.87.0" 
+
+[[redirects]] 
+  from = "/wp-admin/*" 
+  to = "/admin" 
+  status = 301

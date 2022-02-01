@@ -40,10 +40,10 @@ sitemapExclude: false
 					<tr><th><img src="/images/mcbe.png"></th><td>dpG06#4539</td></tr>
 					<tr><th><img src="/images/osu.png"></th><td><a href="https://osu.ppy.sh/users/19989687">/users/19989687</a></td></tr>
 					<tr><th><img src="/images/osudroid.png"></th><td><a href="https://ops.dgsrz.com/profile.php?uid=279686">/profile.php?uid=279686</a></td></tr>
+					<tr><th>CODM Garena</th><td>ID: 6927221836920913921</td></tr>
+					<tr><th>SSGF/SSJYP</th><td>diipii</td></tr>
 					<tr><th><img src="/images/malody.png"></th><td><a href="http://m.mugzone.net/accounts/user/685440">/accounts/user/685440</a></td></tr>
 					<tr><th><img src="/images/rblx.png"></th><td><a href="https://www.roblox.com/users/650986696/profile">/users/650986696/profile</a></td></tr>
-					<tr><th>CODM Garena</th><td>6927221836920913921</td></tr>
-					<tr><th>SSGF/SSJYP</th><td>diipii</td></tr>
 				</table>
 			</div>
 		<button type="button" class="collapsible" id="contact-info">Contact Info</button>
