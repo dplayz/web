@@ -1,0 +1,23 @@
+<DOCTYPE html>
+    <html>
+        {{ block "head" . }}
+        <head>
+            {{ partial "head.html" . }}
+        </head>
+        {{end}}
+        <body>
+            {{ block "header" . }}
+            <div id="pageheader">{{ partial "header.html" . }}</div>
+		    {{ end }}
+            {{ block "main" . }}
+            {{ end }}
+            {{ block "sidebar" . }}
+            <div id="sidebar">
+                    {{ partial "sidebar.html" . }}
+            </div>
+            {{ end }}
+            {{ block "footer" . }}
+            <div id="pagefooter">{{ partial "footer.html" . }}</div>
+            {{ end }}
+        </body>
+    </html>

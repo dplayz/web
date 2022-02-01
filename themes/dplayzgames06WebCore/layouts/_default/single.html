@@ -1,15 +1,3 @@
-
-<DOCTYPE html>
-    <html>
-        <head>
-            {{ partial "head.html" . }}
-        </head>
-        <body>
-            <div id="pageheader">{{ partial "header.html" . }}</div>
+{{ define "main" }}
             {{ .Content }}
-            <div id="sidebar">
-                    {{ partial "sidebar.html" . }}
-            </div>
-            <div id="pagefooter">{{ partial "footer.html" . }}</div>
-        </body>
-    </html>
+{{end}}

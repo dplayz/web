@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<head>
-{{ partial "head.html" . }}
-</head>
-{{ partial "header.html" . }}
-
-<div class="pagetitle border">
+{{ define "main" }}
+<div class="pagetitle">
   <h1>Blogs</h1>
 </div>
 <div id="pagecontent">
@@ -14,11 +9,8 @@
     <img src="{{if eq .Params.customPagePreviewImage true}}{{ .Params.customPagePreviewImageURL | absURL }}{{ else }}{{ .Site.Params.pagePreviewImage | absURL }}{{end}}">
     <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     <a href="{{ .RelPermalink }}" style="color:black;"><p>Published {{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}</p></a>
-    {{ if gt (len .Summary) 200 }}<a href="{{ .RelPermalink }}" style="color:black;">{{slicestr .Summary 3 200}}...</a>{{ end }}
   </article>
 </div>
 {{ end }}
 </div>
-<div id="pagefooter">
-{{ partial "footer.html" . }}
-</div>  
+{{end}}

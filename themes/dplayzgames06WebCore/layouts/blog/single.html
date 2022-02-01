@@ -1,18 +1,8 @@
-<DOCTYPE html>
-    <html>
-        <head>
-            {{ partial "head.html" . }}
-        </head>
-        <body>
-            <div id="pageheader">{{ partial "header.html" . }}</div>
+
+{{ define "main" }}
             <div class="pagetitle"><h1>{{ .Title }}</h1>
             <p>Published {{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}</p>
             </div>
             <div id="pagecontent" class="padding-bottom">{{ .Content }}</div>
             {{with eq .Params.enableComments false}}<div id="pagecomments" class="padding">Comments are disabled :(</div>{{ else }}<div id="pagecomments" class="padding border">{{ template "_internal/disqus.html" . }}</div>{{end}}
-            <div id="sidebar">
-                {{ partial "sidebar.html" . }}
-            </div>
-            <div id="pagefooter">{{ partial "footer.html" . }}</div>
-        </body>
-    </html>
+{{end}}
