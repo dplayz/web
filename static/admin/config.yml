@@ -4,7 +4,7 @@ backend:
 
 media_folder: "static/uploads" 
 public_folder: "uploads"
-display_url: /
+display_url: https://dplayzgames06.tk
 logo_url: /images/logo.png
 
 collections:
