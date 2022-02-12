@@ -3,9 +3,8 @@ const CACHE_VERSION = 1;
 const BASE_CACHE_FILES = [
     '/style/main.css',
     '/admin/admin.css',
-    '/admin/config.yml',
     '/manifest.json',
-    '/favicon.png',
+    '/favicon.ico',
     '/images/logo.png'
 ];
 
