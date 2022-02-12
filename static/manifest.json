@@ -8,19 +8,20 @@
       "type": "image/png"
     },
     {
-      "src": "/images/favicon/apple-touch-icon/144.png",
+      "src": "/images/apple-touch-icon/144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon/apple-touch-icon/152x152.png",
+      "src": "/images/apple-touch-icon/152.png",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
       "src": "/images/favicon/196.png",
       "sizes": "196x196",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable" 
     },
     {
       "src": "/images/splash.png",
