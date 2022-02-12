@@ -25,6 +25,21 @@
   });
 </script>
 <script src="./scripts/browser-update.js"></script>
+<script>
+  if('serviceWorker' in navigator) {
+      navigator.serviceWorker
+          .register('/sw.js', { scope: '/' })
+          .then(function(registration) {
+              console.log('Service Worker Registered');
+          });
+
+      navigator.serviceWorker
+          .ready
+          .then(function(registration) {
+              console.log('Service Worker Ready');
+          });
+  }
+</script>
 <script src="./scripts/sw.js"></script>
 {{ print "<!--Outside Site Scripts -->" | safeHTML }}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
