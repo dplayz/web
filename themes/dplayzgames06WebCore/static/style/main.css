@@ -357,7 +357,7 @@ div#pagecomments{background-color: #fff;}
 	padding:15px;
 }
 @media (max-width: 600px) {
-	.row {
+	div.row:not(.blogpost) {
 		display: block;
 	}
 }

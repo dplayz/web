@@ -5,6 +5,7 @@ theme: dplayzgames06WebCore
 params:
   description: The official website of dplayz Games where information about him are posted.
   pagePreviewImage: /images/preview.png
+  author: author
 enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
