@@ -160,7 +160,13 @@ div.navbar-links-last{
 		position:relative;
 	}
 }
-
+/*pagetitle-design-light;pagepreview-design-light| Page Title Design*/
+div.pagetitle-design,div.pagepreview-design{
+	color:black;
+	background-color:gray;
+	border-radius:10px;
+	border:5px solid black;
+}
 /*pagecontent-light-buttonanchor | Parent button*/
 a.button {
 	display:inline-block;
@@ -312,6 +318,11 @@ div#pagecomments{background-color: #fff;}
 		.navbar .dropdown-content {
 			position:relative;
 		}
+	}
+	/*pagetitle-design-dark;pagepreview-design-dark | Page Title Design*/
+	div.pagetitle-design,div.pagepreview-design{
+		color:white;
+		background-color:#333;
 	}
 	/*pagecontent-dark-buttonanchor | Parent button*/
 	a.button {
