@@ -1,0 +1,25 @@
+{{ print "<!--Inside Site Scripts -->" | safeHTML }}
+<script>
+	if (window.netlifyIdentity) {
+	  window.netlifyIdentity.on("init", user => {
+		if (!user) {
+		  window.netlifyIdentity.on("login", () => {
+			document.location.href = "/admin/";
+		  });
+		}
+	  });
+	}
+</script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "c297670d-63a2-4232-8f52-a8602fdffc33",
+    });
+  });
+</script>
+<script src="./scripts/browser-update.js"></script>
+
+{{ print "<!--Outside Site Scripts -->" | safeHTML }}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
