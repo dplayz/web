@@ -19,5 +19,7 @@
             {{ block "footer" . }}
             <div id="pagefooter">{{ partial "footer.html" . }}</div>
             {{ end }}
+            {{ block "footer-scripts" . }}
+            <div id="pagefooter-scripts">{{ partial "footer-scripts.html" . }}</div>
         </body>
     </html>
