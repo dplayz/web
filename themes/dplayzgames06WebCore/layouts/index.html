@@ -3,33 +3,96 @@
 </div>
 <br>
     <a class="button" href="/info">Info</a><a class="button" href="/blog">Blog</a>
-    <div class="slidablelist-wrapper">
-        <div class="slidablelist-item">1</div>
-        <div class="slidablelist-item">2</div>
-        <div class="slidablelist-item">3</div>
-        <div class="slidablelist-item">4</div>
-        <div class="slidablelist-item">5</div>
-        <div class="slidablelist-item">1</div>
-        <div class="slidablelist-item">2</div>
-        <div class="slidablelist-item">3</div>
-        <div class="slidablelist-item">4</div>
-        <div class="slidablelist-item">5</div>
-    </div>
+    </br>
     <style>
-        .slidablelist-wrapper{
-            display:flex;
-            overflow-x:hidden;
+      .slider {
+        width: 300px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .slides {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+      .slides::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+      .slides::-webkit-scrollbar-thumb {
+        background: #666;
+        border-radius: 10px;
+      }
+      .slides::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .slides > div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 300px;
+        height: 300px;
+        margin-right: 50px;
+        border-radius: 10px;
+        background: #eee;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+      }
+      .slider > a {
+        display: inline-flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: white;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 0 0.5rem 0;
+        position: relative;
+      }
+      .slider > a:active {
+        top: 1px;
+        color: #1c87c9;
+      }
+      .slider > a:focus {
+        background: #eee;
+      }
+      /* Don't need button navigation */
+      @supports (scroll-snap-type) {
+        .slider > a {
+          display: none;
         }
-        .slidablelist-wrapper:-webkit-scrollbar{
-            width:0;
-        }
-        .slidablelist-wrapper .slidablelist-item{
-            min-width: 72px;
-            text-align:center;
-            border:black 2px solid;
-            margin:2px;
-        }
+      }
+      html,
+      body {
+        overflow: hidden;
+      }
+      body {
+        align-items: center;
+      }
     </style>
+    <div class="slider" style="margin-left:auto; margin-right:auto; ">
+      <a href="#fb-page">FB</a>
+      <a href="#twitch-channel">TW</a>
+      <a href="#yt1-channel">YT1</a>
+      <a href="#yt2-channel">YT2</a>
+      <a href="#slide-5"></a>
+      <div class="slides">
+        <div id="fb-page"><div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="380" data-hide-cover="false" data-show-facepile="false"></div></div>
+        <div id="twitch-channel">2</div>
+        <div id="yt1-channel">3</div>
+        <div id="yt2-channel">4</div>
+        <div id="slide-5">5</div>
+      </div>
+    </div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> 
 {{ end }}
 {{ define "footer" }}
 <br>
