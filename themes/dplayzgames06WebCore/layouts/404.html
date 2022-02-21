@@ -1,8 +1,4 @@
-<head>
-	{{ partial "head.html" . }}
-</head>
-<body>
-	<div id="pageheader">{{ partial "header.html" . }}</div>
+{{define "main"}}
 	<div id="pagetitle">
 		<div id="errormessage">
 			<h2>404</h2>
@@ -11,7 +7,10 @@
 				<p><a href="javascript:history.back()">Go Back</a></p>
 		</div>
 	</div>
-<div id="sidebar">
-	{{ partial "sidebar.html" . }}
-</div>
-</body>
+{{end}}
+{{define "sidebar"}}
+<br>
+{{end}}
+{{define "footer"}}
+<br>
+{{end}}
