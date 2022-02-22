@@ -6,34 +6,27 @@
     </br>
     <style>
       .slider {
+        /*z-index:-1;*/
         width: 300px;
         text-align: center;
         overflow: hidden;
       }
+      @media (min-width:800px){
+        .slider{width: 600px; height:600px;}
+        .slides div{height:800px;}
+      }
       .slides {
         display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
+        overflow-x: hidden;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
       }
-      .slides::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-      }
-      .slides::-webkit-scrollbar-thumb {
-        background: #666;
-        border-radius: 10px;
-      }
-      .slides::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      .slides > div {
+      .slides div {
         scroll-snap-align: start;
         flex-shrink: 0;
-        width: 300px;
-        height: 300px;
-        margin-right: 50px;
+        width: 97.5%;
+        height:300px;
+        margin-right: 10px;
         border-radius: 10px;
         background: #eee;
         transform-origin: center center;
@@ -44,8 +37,11 @@
         justify-content: center;
         align-items: center;
         font-size: 100px;
+        border:5px black solid;
+        border-radius:5px;
+        background-color:white;
       }
-      .slider > a {
+      .slider a {
         display: inline-flex;
         width: 1.5rem;
         height: 1.5rem;
@@ -56,43 +52,24 @@
         border-radius: 50%;
         margin: 0 0 0.5rem 0;
         position: relative;
-      }
-      .slider > a:active {
-        top: 1px;
-        color: #1c87c9;
-      }
-      .slider > a:focus {
-        background: #eee;
-      }
-      /* Don't need button navigation */
-      @supports (scroll-snap-type) {
-        .slider > a {
-          display: none;
-        }
-      }
-      html,
-      body {
-        overflow: hidden;
-      }
-      body {
-        align-items: center;
-      }
+      } 
     </style>
-    <div class="slider" style="margin-left:auto; margin-right:auto; ">
-      <a href="#fb-page">FB</a>
-      <a href="#twitch-channel">TW</a>
-      <a href="#yt1-channel">YT1</a>
-      <a href="#yt2-channel">YT2</a>
-      <a href="#slide-5"></a>
+    <div class="slider" style="margin-left:auto; margin-right:auto; padding: top 30px;">
       <div class="slides">
-        <div id="fb-page"><div class="fb-page" data-href="https://www.facebook.com/facebook" data-width="380" data-hide-cover="false" data-show-facepile="false"></div></div>
-        <div id="twitch-channel">2</div>
+        <div id="fb-page" style="background-color:#2374E1;" class="fb-page" data-href="https://www.facebook.com/dplayzgames06/" data-tabs="timeline" data-width="600" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"></div>
+        <div id="twitch-channel"><iframe src="https://player.twitch.tv/?channel=dplayzgames06&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no" height="100%" width="100%"></iframe></div>
         <div id="yt1-channel">3</div>
         <div id="yt2-channel">4</div>
         <div id="slide-5">5</div>
       </div>
+      <a href="#fb-page"><img src="/images/fb.png" width="17.5px"></a>
+      <a href="#twitch-channel"><img src="/images/twch.png" width="15px"></a>
+      <a href="#yt1-channel">YT1</a>
+      <a href="#yt2-channel">YT2</a>
+      <a href="#slide-5">TEST</a>
     </div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> 
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/tl_PH/sdk.js#xfbml=1&version=v13.0&appId=2932203920349027&autoLogAppEvents=1" nonce="rAlCMoZM"></script>
 {{ end }}
 {{ define "footer" }}
 <br>
