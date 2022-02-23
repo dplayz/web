@@ -6,7 +6,8 @@
     </br>
     <style>
       .slider {
-        /*z-index:-1;*/
+        z-index:-99999;
+        overflow-y:hidden;
         width: 300px;
         text-align: center;
         overflow: hidden;
@@ -16,6 +17,7 @@
         .slides div{height:800px;}
       }
       .slides {
+      z-index:-99;
         display: flex;
         overflow-x: hidden;
         scroll-behavior: smooth;
