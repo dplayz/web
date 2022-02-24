@@ -6,27 +6,28 @@
     </br>
     <style>
       .slider {
-        z-index:-99999;
+        z-index:99999;
         overflow-y:hidden;
         width: 300px;
         text-align: center;
-        overflow: hidden;
+        overflow-y: hidden;
       }
       @media (min-width:800px){
         .slider{width: 600px; height:600px;}
         .slides div{height:800px;}
       }
       .slides {
-      z-index:-99;
+        z-index:-99;
         display: flex;
         overflow-x: hidden;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
       }
       .slides div {
+        z-index:0;
         scroll-snap-align: start;
         flex-shrink: 0;
-        width: 97.5%;
+        width: 97%;
         height:300px;
         margin-right: 10px;
         border-radius: 10px;
@@ -43,7 +44,7 @@
         border-radius:5px;
         background-color:white;
       }
-      .slider a {
+      .slider > a {
         display: inline-flex;
         width: 1.5rem;
         height: 1.5rem;
