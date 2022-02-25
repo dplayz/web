@@ -20,24 +20,22 @@
 </script>
 <script src="./scripts/browser-update.js"></script>
 <script> 
-window.fbAsyncInit = function() { 
-FB.init({ 
-appId : '{your-app-id}', 
-xfbml : true, 
-version : 'v3.2' 
-}); 
-// Get Embedded Video Player API Instance 
-var my_video_player; 
-FB.Event.subscribe('xfbml.ready', function(msg) { 
-if (msg.type === 'video') { 
-my_video_player = msg.instance; 
-} 
-}); 
+	window.fbAsyncInit = function() { 
+		FB.init({ 
+		appId : '2932203920349027', 
+		xfbml : true, 
+		version : 'v3.2' 
+	}); 
+	// Get Embedded Video Player API Instance 
+		var my_video_player; 
+		FB.Event.subscribe('xfbml.ready', function(msg) { 
+		if (msg.type === 'video') { 
+		my_video_player = msg.instance; 
+		} 
+	}); 
 };
 </script> 
 {{ print "<!--Outside Site Scripts -->" | safeHTML }}
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-
-<!-- Load Facebook SDK for JavaScript --> <div id="fb-root"></div> <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script> 
-
+<div id="fb-root"></div> <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
