@@ -1,0 +1,15 @@
+@font-face {
+	font-family: BloggerSans;
+	src: url(/fonts/Blogger_Sans.otf);
+  }  
+body{background-color:white;font-family: Blogger Sans, Roboto, Helvetica, Arial, sans-serif;}
+table, tr, th, td {
+	border: 2.5px solid black;
+	border-radius:10px;
+	border-collapse: collapse;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	padding:5px;
+}
+img{width:100%;}
