@@ -22,5 +22,10 @@
             {{ block "footer-scripts" . }}
             <div id="pagefooter-scripts">{{ partial "footer-scripts.html" . }}</div>
             {{end}}
+            {{ block "zoom-block" . }}
+            <template id="zoom-template" style="background-color:transparent;">
+                <div id="zoom-container" style="margin-top:-150px;top:0;left:0;right:0;bottom:0;width:100%;position:fixed;"></div>
+            </template>
+            {{ end }}
         </body>
     </html>
