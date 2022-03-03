@@ -21,5 +21,6 @@ collections:
       - {label: "Permalink", name: "permalink", widget: "string", required: false}
       - {label: "Use Custom Preview Image", name: "customPagePreviewImage", widget: "boolean", required: false}
       - {label: "Custom Preview Image", name: "customPagePreviewImageURL", widget: "image", required: false}
+      - {label: "Forum Discussion Link", name: "forumDiscussionLink", widget: "string", required: false}
       - {label: "Comments", name: "enableComments", widget: "boolean", default: false }
       - {label: "Exclude from Sitemap", name: "sitemapExclude", widget: "boolean", required: false}
