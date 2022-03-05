@@ -16,8 +16,7 @@
             </div>
             <div id="pagecontent" style="text-align:left;padding-right:10%;padding-left:10%; text-indent: 30px;" class="padding-bottom">{{ .Content }}</div>
             {{ if eq .Params.enableComments true}}<div id="pagecomments" class="padding border">{{ template "_internal/disqus.html" . }}</div>
-{{ else if 
-.Params.forumDiscussionLink }}<div id="pagecomments" class="border" style="margin:-1;"><iframe src="{{.Params.forumDiscussionLink}}" width="800px" height="800px" style="margin:0"></iframe><style>@media(max-width: 800px){div#pagecomments iframe{width:99%;height:400px;}}</style></div>
+{{ else if .Params.redditDiscussionLink }}<div id="pagecomments" class="padding border"><p>Discuss it here: <a href="{{.Params.forumDiscussionLink}}">{{.Params.redditDiscussionLink}}</a></p></div>
 {{ else }}<div id="pagecomments" class="padding border">Comments are disabled :(</div>
 {{ end }}
 {{end}}
