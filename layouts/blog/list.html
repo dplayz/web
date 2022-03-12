@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="pagetitle">
+  <h1>Blogs</h1>
+</div>
+<div id="pagecontent">
+  {{ range.Data.Pages }}
+  <article class="post-snippet" style="padding-left:5%; padding-right:5%;">
+    <div class="padding-top padding-bottom">
+    <a href="{{.Permalink}}" style="color:white; text-decoration: none;">
+    <div class="pagetitle-design">
+    <div class="row">
+      <div class="column" style="text-align:left;">
+          <h1>{{ .Title }}</h1>
+          <p>Published {{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}</p>
+          <p>Authored by {{ if .Params.author }}{{.Params.author}}{{ else }}{{ .Site.Params.Author }}{{end}}</p>
+      </div>
+      <div class="column">
+          <img width="100%" src="{{if .Params.customPagePreviewImageURL }}{{ .Params.customPagePreviewImageURL | absURL }}{{ else }}{{ .Site.Params.pagePreviewImage | absURL }}{{end}}">
+      </div>
+    </div>
+      <div style="display:block;padding-bottom:5%">{{ .Content }}</div>   
+    </div>
+    </a>
+  </article>
+{{ end }}
+</div>
+{{end}}

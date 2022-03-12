@@ -1,0 +1,22 @@
+
+{{ define "main" }}
+            <div class="pagetitle">
+                <div style="padding-right:15%; padding-left:15%; ">
+                <div class="row pagetitle-design">
+                    <div class="column" style="text-align:left;">
+                        <h1>{{ .Title }}</h1>
+                        <p>Published {{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}</p>
+                        <p>Authored by {{ if .Params.author }}{{.Params.author}}{{ else }}{{ .Site.Params.Author }}{{end}}</p>
+                    </div>
+                    <div class="column">
+                        <img width="100%" src="{{if .Params.customPagePreviewImageURL }}{{ .Params.customPagePreviewImageURL | absURL }}{{ else }}{{ .Site.Params.pagePreviewImage | absURL }}{{end}}">
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div id="pagecontent" style="text-align:left;padding-right:10%;padding-left:10%; text-indent: 30px;" class="padding-bottom">{{ .Content }}</div>
+            {{ if eq .Params.enableComments true}}<div id="pagecomments" class="padding border">{{ template "_internal/disqus.html" . }}</div>
+{{ else if .Params.redditDiscussionLink }}<div id="pagecomments" class="padding border"><p>Discuss it here: <a href="{{.Params.forumDiscussionLink}}">{{.Params.redditDiscussionLink}}</a></p></div>
+{{ else }}<div id="pagecomments" class="padding border">Comments are disabled :(</div>
+{{ end }}
+{{end}}

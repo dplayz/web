@@ -1,0 +1,17 @@
+html{
+	background: linear-gradient(90deg, rgba(8,19,253,1) 24%, rgba(45,139,252,1) 69%);
+}
+@media (prefers-color-scheme: dark) {
+	/*page-dark-html*/
+	html{
+		background: linear-gradient(95deg, rgba(8,16,186,1) 24%, rgba(30,96,175, 1 ) 69%);
+	}
+}
+.pageheaderpadding{margin-top:101px !important;}
+@font-face {
+	font-family: BloggerSans;
+	src: url(/fonts/Blogger_Sans.otf);
+}
+body{
+	font-family: BloggerSans, Roboto, Helvetica, Arial, sans-serif !important;
+}
