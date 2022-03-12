@@ -1,11 +1,19 @@
 baseURL: 'https://dplayzgames06.tk/'
 languageCode: en-us
 title: dplayz Games
-theme: dplayzgames06WebCore
+theme: codenamecore
 params:
   description: The official website of dplayz Games where information about him are posted.
   pagePreviewImage: /images/preview.png
   author: dplayzgames06
+
+  fbSDKID: 2932203920349027
+  onesignalSDKID: c297670d-63a2-4232-8f52-a8602fdffc33
+
+  copyrightyearStarted: 2021 
+  copyrightyearToday: 2022
+  copyrightHolder: dplayz Games
+  copyrightNotes: Elements of this website are owned by dplayz Games. Other third party copyrighted content are owned by their respective owners.
 enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
