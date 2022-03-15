@@ -10,7 +10,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-            fetch-depth: 0
+            fetch-depth: 2
       # Build
       - name: ls
         run: ls
