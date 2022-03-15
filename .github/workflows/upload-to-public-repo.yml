@@ -6,6 +6,9 @@ jobs:
     name: Upload public to drive
     runs-on: ubuntu-latest
     steps:
+      # 
+      - name: Clone Repo
+      - run: git clone https://github.com/dplayz/dplayzgames06web-public.git
       # Checkout
       - name: Checkout repository
         uses: actions/checkout@v2
