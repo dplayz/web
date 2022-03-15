@@ -1,0 +1,14 @@
+name: Store public in Drive
+on:
+  push: { branches: [main] }
+jobs:
+  buildAndTestForSomePlatforms:
+    name: Upload public to drive
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      # Build
+      - name: ls
+        run: ls
