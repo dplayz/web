@@ -6,6 +6,7 @@ html{
 	html{
 		background: linear-gradient(95deg, rgba(8,16,186,1) 24%, rgba(30,96,175, 1 ) 69%);
 	}
+	a:link{color:lightblue;}
 }
 @font-face {
 	font-family: BloggerSans;
@@ -14,3 +15,4 @@ html{
 body{
 	font-family: BloggerSans, Roboto, Helvetica, Arial, sans-serif !important;
 }
+a:link{color:lightblue;}
