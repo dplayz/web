@@ -7,8 +7,6 @@ draft: false
 sitemapExclude: false
 ---
 <div id="pagecontent border">
-			<div class="pagetitle padding-pagetitle">
-			</div>
 			<img src="/images/logo.png" width="240px" class="style-exclude"style="margin-top:2%;">	
 		</div>
 		<br>
