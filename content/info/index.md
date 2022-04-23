@@ -16,6 +16,7 @@ sitemapExclude: false
 				<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 					<tr><th><a href="https://facebook.com/dplayzgames06" target="_parent"><img src="/images/fb.png"></a><a href="https://twitch.tv/dplayzgames06" target="_parent"><img src="/images/twch.png"></a></th><td>/dplayzgames06</td></tr>
 					<tr><th><img src="/images/yt.png"></th><td><a href="https://youtube.com/channel/UCNTjCvAvlLzmEKIZQ5BpoGQ" target="_parent">dplayz Games</a> | <a href="https://youtube.com/channel/UCRYtnbYg1N9AKS7LQ88N5Qg" target="_parent">dplayz Games VOD</a></td>
+					<tr><th><a href="https://medal.tv/u/dplayzgames06"><img src="/images/medal.png"></a></th><td>u/dplayzgames06</td>
 					<tr><th><a href="https://twitter.com/dplayzgames06" target="_parent"><img src="/images/twt.png"></a><a href="https://tiktok.com/dplayzgames06" target="_parent"><img src="/images/tktk.png"></a><a href="https://instagram.com/dplayzgames06" target="_parent"><img src="/images/ig.png"></a></th><td>/dplayzgames06</td></tr>
 				</table>
 			</div>
