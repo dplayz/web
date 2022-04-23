@@ -40,10 +40,11 @@ sitemapExclude: false
 					<tr style="border-top:none;"><th>Superstar GFRIEND</th><td>diipii</td></tr>
 				</table>
 			</div>
-		<button type="button" class="collapsible">Other Accounts</button>
+		<button type="button" class="collapsible">My other accounts</button>
 			<div class="content">
-  				<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
-					<tr><th><a href="https://github.com/dplayz" target="_parent"><img src="/images/gh.png"></a><a href="https://gitlab.com/dplayz" target="_parent"><img src="/images/glb.png"></a></th><td>/dplayz</td>
+				<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
+					<tr><th><a href="https://github.com/dplayz" target="_parent"><img src="/images/gh.png"></a><a href="https://gitlab.com/dplayz" target="_parent"><img src="/images/glb.png"></a></th><td>/dplayz</td></tr>
+					<tr><th><a href="https://reddit.com/u/dpG06" target="_parent"><img src="/images/reddit.png"></a></a></th><td>u/dpG06</td></tr>
 				</table>
 			</div>
 		<button type="button" class="collapsible" id="contact-info">Contact Info</button>
