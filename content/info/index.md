@@ -24,17 +24,22 @@ sitemapExclude: false
 			<div class="content">
 				<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 					<tr><th>Minecraft</th></tr>
-					<tr style="border-top:none; border-bottom:none;"><th>Bedrock Edition</th><td><td>dpG06#4539</td></tr>
-					<tr style="border-top:none;"><th>Java Edition(TLauncher)</th><td><td>dpG06</td></tr>
+					<tr style="border-top:none; border-bottom:none;"><th>Bedrock Edition</th><td><td>dpG064539</td></tr>
 					<tr><th>osu!</th></tr>
 					<tr style="border-top:none; border-bottom:none;"><th><img src="/images/osu.png"></th><td><a href="https://osu.ppy.sh/users/19989687">/users/19989687</a></td></tr>
 					<tr style="border-top:none; border-bottom:none;"><th><img src="/images/osudroid.png"></th><td><a href="https://ops.dgsrz.com/profile.php?uid=279686">/profile.php?uid=279686</a></td></tr>
 					<tr style="border-top:none;"><th>Sakuru Server</th><td><a href="https://sakuru.pw/u/1092">/u/1092</a></td></tr>
 					<tr><th>CODM Garena</th><td>ID: 6927221836920913921</td></tr>
+					<tr><th>Superstar Games</th></tr>
+					<tr style="border-top:none;"><th>Superstar JYPNation</th><td>diipii</td></tr>
+				</table>
+				<b>Inactive player of these games</b>
+				<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
+					<tr style="border-bottom:none;"><th>Minecraft</th></tr>
+					<tr style="border-top:none;"><th>Java Edition(TLauncher)</th><td><td>dpG06</td></tr>
 					<tr><th><img src="/images/malody.png"></th><td><a href="http://m.mugzone.net/accounts/user/685440">/accounts/user/685440</a></td></tr>
 					<tr><th><img src="/images/rblx.png"></th><td><a href="https://www.roblox.com/users/650986696/profile">/users/650986696/profile</a></td></tr>
 					<tr><th>Superstar Games</th></tr>
-					<tr style="border-top:none; border-bottom:none;"><th>Superstar JYPNation</th><td>diipii</td></tr>
 					<tr style="border-top:none; border-bottom:none;"><th>Superstar SMTOWN</th><td>diipii</td></tr>
 					<tr style="border-top:none; border-bottom:none;"><th>Superstar Starship</th><td>diipii</td></tr>
 					<tr style="border-top:none;"><th>Superstar GFRIEND</th><td>diipii</td></tr>
