@@ -53,23 +53,7 @@ sitemapExclude: false
 						<tr><th><img src="../images/msgr.png"></th><td><a href="http://m.me/dplayzgames06">/dplayzgames06</a></td></tr>
 						<tr><th><img src="../images/dscrd.png"></th><td><a href="https://discord.gg/zj88wBrENV">/zj88wBrENV</a></td></tr>
 					</table>
-				</div>	
-				<!--Script for collapsable content. Will be moved into a separate file-->
-			<script>
-				var coll = document.getElementsByClassName("collapsible");
-				var i;
-					for (i = 0; i < coll.length; i++) {
-					coll[i].addEventListener("click", function() {
-					this.classList.toggle("active");
-					var content = this.nextElementSibling;
-						if (content.style.display === "block") {
-							content.style.display = "none";
-						} else {
-							content.style.display = "block";
-						}
-					});
-				}
-			</script>
+</div>	
 		<br>
 		<br>
 		<br>
