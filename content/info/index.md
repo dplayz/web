@@ -2,7 +2,7 @@
 category: post
 title: "Info"
 date: 2022-01-20T10:52:59+08:00
-description: ""
+description: "Check my accounts and info here!"
 draft: false
 sitemapExclude: true
 ---
