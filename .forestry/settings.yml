@@ -15,11 +15,6 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/calendar
-  label: Calendar
-  create: all
-  match: "**/*"
-- type: directory
   path: content/blog
   label: Blog
   create: all
