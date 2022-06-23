@@ -1,5 +1,5 @@
 <p align="center" width="20px">
-  <img src="https://files.dplayzgames06.tk/web/logo.png" alt="logo" width="25%"/><br>  
+  <img src="https://user-images.githubusercontent.com/75030438/175222371-1600aef9-6e08-4762-867e-1022a391edcf.png" alt="logo" width="25%"/><br>  
   <h1 align="center">dplayz Games Website</h1>
   <p align="center">
   <a href="https://github.com/dplayz/dplayzgames06web/tags"><img src="https://img.shields.io/github/v/tag/dplayz/dplayzgames06web?color=green&style=plastic" alt="latest tag version"></a>
