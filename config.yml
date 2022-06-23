@@ -19,7 +19,3 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 disqusShortName: dplayz-games
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
