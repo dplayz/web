@@ -2,7 +2,6 @@
   <img src="https://user-images.githubusercontent.com/75030438/175222371-1600aef9-6e08-4762-867e-1022a391edcf.png" alt="logo" width="25%"/><br>  
   <h1 align="center">dplayz Games Website</h1>
   <p align="center">
-  <a href="https://github.com/dplayz/dplayzgames06web/tags"><img src="https://img.shields.io/github/v/tag/dplayz/dplayzgames06web?color=green&style=plastic" alt="latest tag version"></a>
   <a href="https://github.com/dplayz/dplayzgames06web/commits/main"><img src="https://img.shields.io/maintenance/yes/2022?style=plastic" alt="actively maintaned"></a>
   <a href="https://github.com/dplayz/dplayzgames06web/blob/main/LICENSE"><img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"></a>
     <br>
@@ -19,6 +18,7 @@ Based on [Hugo](https://gohugo.io), a static site generator using my own coded t
 These are the dependencies and needs of this website.
 - [Hugo](https://gohugo.io)
 - [Disqus](https://disqus.com)
+- [Forestry.io](https://forestry.io)
 
 ## Contact Information:
 Please check dplayz Games README.md](https://github.com/dplayz/dplayz) for more information
