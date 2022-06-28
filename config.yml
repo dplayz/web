@@ -10,6 +10,14 @@ params:
   fbSDKID: 2932203920349027
   onesignalSDKID: c297670d-63a2-4232-8f52-a8602fdffc33
 
+  devBranchNotice:
+    enable: true
+    bugReportURL: https://github.com/dplayz/codenamecore
+  sectionList: 
+    articleSnippetStyle: listStyle
+  relatedArticle: 
+    enable: true
+    articleSnippetStyle: listStyle
   copyrightyearStarted: 2021 
   copyrightyearToday: 2022
   copyrightHolder: dplayz Games
@@ -19,3 +27,17 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 disqusShortName: dplayz-games
+
+taxonomies:
+  category : categories
+  tag : tags
+
+markup:
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+
+timeZone: "Asia/Manila"
+menu:
+- main
