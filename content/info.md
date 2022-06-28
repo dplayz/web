@@ -5,6 +5,7 @@ date: 2022-01-20T10:52:59+08:00
 description: "Check my accounts and info here!"
 draft: false
 sitemapExclude: true
+singlepage: true
 ---
 {{< html >}}
 <div id="pagecontent border">
