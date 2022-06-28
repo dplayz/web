@@ -1,4 +1,7 @@
-{{ define "main" }}  
+---
+singlepage: true
+---
+{{< html >}}
 <img src="../images/logo.png"  class="style-exclude" width="240px" style="margin-top:2%;">	
 </div>
 <br>
@@ -73,7 +76,5 @@
     </div>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/tl_PH/sdk.js#xfbml=1&version=v13.0&appId=2932203920349027&autoLogAppEvents=1" nonce="rAlCMoZM"></script>
-{{ end }}
-{{ define "footer" }}
 <br>
-{{ end }}
+{{< /html >}}
