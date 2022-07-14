@@ -40,4 +40,24 @@ markup:
 
 timeZone: "Asia/Manila"
 menu:
-- main
+  main:
+  - identifier: Info
+    name: Info
+    params: 
+      url: /info
+    weight: 1
+  - identifier: blog
+    name: Blog
+    params: 
+      url: /blog
+    weight: 2
+  - identifier: svcstats
+    name: Status
+    params: 
+      url: https://status.dplayzgames06.tk
+    weight: 3
+  - identifier: workstationsvc
+    name: Workstation
+    params: 
+      url: https://workstation.dplayzgames06.tk
+    weight: 4
