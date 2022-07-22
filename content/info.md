@@ -6,18 +6,24 @@ description: "Check my accounts and info here!"
 draft: false
 sitemapExclude: true
 singlepage: true
+infopage: true
 ---
 {{< html >}}
-<div id="pagecontent border">
-			<img src="/images/logo.png" width="240px" class="style-exclude"style="margin-top:2%;">	
-		</div>
-		<br>
-		<a href="https://facebook.com/dplayzgames06" target="_parent"><img src="/images/fb.png"></a><a href="https://twitch.tv/dplayzgames06" target="_parent"><img src="/images/twch.png"></a> <a href="https://medal.tv/u/dplayzgames06"><img src="/images/medal.png"></a> <a href="https://twitter.com/dplayzgames06" target="_parent"><img src="/images/twt.png"></a><a href="https://tiktok.com/dplayzgames06" target="_parent"><img src="/images/tktk.png"></a><a href="https://instagram.com/dplayzgames06" target="_parent"><img src="/images/ig.png"></a><br>
-		<b>/dplayzgames06</b><br><br>
-		<img src="/images/yt.png"><br>
-		<a href="https://youtube.com/channel/UCNTjCvAvlLzmEKIZQ5BpoGQ" target="_parent">dplayz Games</a> | <a href="https://youtube.com/channel/UCRYtnbYg1N9AKS7LQ88N5Qg" target="_parent">dplayz Games VOD</a><br><br>
+{{< infopage/profile-gravatar "dp@dplayzgames06.tk" >}}
+{{< infopage/sns >}}
+    {{< infopage/sns/facebook "https://facebook.com/dplayzgames06" >}}
+	{{< infopage/sns/twitch "https://twitch.tv/dplayzgames06" >}}
+	{{< infopage/sns/youtube "https://youtube.com/channel/UCNTjCvAvlLzmEKIZQ5BpoGQ" >}}
+	{{< infopage/sns/youtube "https://youtube.com/channel/UCRYtnbYg1N9AKS7LQ88N5Qg" >}}
+    {{< infopage/sns/medal "https://medal.tv/u/dplayzgames06" >}}
+	{{< infopage/sns/twitter "https://twitter.com/dplayzgames06" >}}
+	{{< infopage/sns/tiktok "https://tiktok.com/@dplayzgames06" >}}
+    {{< infopage/sns/instagram "https://instagram.com/dplayzgames06" >}}
+	
+{{</ infopage/sns >}}
+<br>
 		{{< dynamicContent gameID >}}
-			{{< collapsible "Play With Me!" >}}
+			{{< infopage/collapsible "Play With Me!" >}}
 				<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 					<tr style="border-bottom:none;"><th>Minecraft</th></tr>
 					<tr style="border-top:none; border-bottom:none;"><th>Bedrock Edition</th><td><td>dpG064539</td></tr>
@@ -41,17 +47,17 @@ singlepage: true
 					<tr style="border-top:none; border-bottom:none;"><th>Superstar SMTOWN</th><td>diipii</td></tr>
 					<tr style="border-top:none;"><th>Superstar GFRIEND<br>(Because the game is now ended)</th><td>diipii</td></tr>
 				</table>
-			{{< /collapsible >}}
+			{{</ infopage/collapsible>}}
 		{{< /dynamicContent >}}
-		{{< collapsible "My other accounts" >}}
+		{{< infopage/collapsible "My other accounts" >}}
 				<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 					<tr><th><a href="https://github.com/dplayz" target="_parent"><img src="/images/gh.png"></a><a href="https://gitlab.com/dplayz" target="_parent"><img src="/images/glb.png"></a></th><td>/dplayz</td></tr>
 					<tr><th><a href="https://reddit.com/u/dpG06" target="_parent"><img src="/images/reddit.png"></a></a></th><td>u/dpG06</td></tr>
 				</table>
-		{{< /collapsible >}}
+		{{< /infopage/collapsible >}}
 		{{< dynamicContent kpopID >}}
-			{{< collapsible "Kpop-Related Accounts" >}}
-				{{< collapsible "VLIVE-WEVERSE" >}}
+			{{< infopage/collapsible "Kpop-Related Accounts" >}}
+				{{< infopage/collapsible "VLIVE-WEVERSE" >}}
 					<b>VLIVE</b>
 					<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 					<tr><th>TWICE</th><td>[🇵🇭ONCE]diipii</td></tr>
@@ -71,43 +77,43 @@ singlepage: true
 					<tr><th>FROMIS_9</th><td>[🇵🇭exploringFLOVER]diipii</td></tr>
 					<tr><th>wooh!ah</th><td>[🇵🇭]diipii</td></tr>
 					</table>
-				{{< /collapsible >}}
-				{{< collapsible "Daum Cafe" >}}
+				{{< /infopage/collapsible >}}
+				{{< infopage/collapsible "Daum Cafe" >}}
 					<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 					<tr><th>Kep1er</th><td>[PHKep1ian]dp</td></tr>
 					<tr><th>Brave Girls</th><td>[PHFearless]dp</td></tr>
 					<tr><th>LOONA</th><td>[PHnewbieOrbit]dp</td></tr>
 					<tr><th>IVE</th><td>[PHDive]dp</td></tr>
 					</table>
-				{{< /collapsible >}}
-				{{< collapsible "Voting Platforms" >}}
+				{{< /infopage/collapsible >}}
+				{{< infopage/collapsible "Voting Platforms" >}}
 					<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 						<tr><th>Idol Champ</th><td>diiipiii</td></tr>
 						<tr><th>Star Planet<br>(Formerly Starpass)</th><td>diipii</td></tr>
 					</table>
-				{{< /collapsible >}}
-				{{< collapsible "JYPE Fans" >}}
+				{{< /infopage/collapsible >}}
+				{{< infopage/collapsible "JYPE Fans" >}}
 					<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 						<tr><th>TWICE</th><td> [🇵🇭ONCE]dp</td></tr>
 						<tr><th>ITZY</th><td>[🇵🇭MIDZY]dp</td></tr>
 						<tr><th>NMIXX</th><td>[🇵🇭NSWER]dp</td></tr>
 						</table>
-				{{< /collapsible >}}
-				{{< collapsible "SMEnt's Lysn" >}}
+				{{< /infopage/collapsible >}}
+				{{< infopage/collapsible "SMEnt's Lysn" >}}
 					<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 						<tr><th>RED VELVET</th><td>[🇵🇭REVELUV]dp</td></tr>
 					</table>
-				{{< /collapsible >}}
-			{{< /collapsible >}}
+				{{< /infopage/collapsible >}}
+			{{< /infopage/collapsible >}}
 		{{< /dynamicContent >}}
-		{{< collapsible "Contact Info" >}}
+		{{< infopage/collapsible "Contact Info" >}}
 			<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 				<tr><th>Mail</th><td><a href="mailto:dp@dplayzgames06.tk">dp@dplayzgames06.tk</a></td></tr>
 				<tr><th>Blog Feed</th><td>| <a href="/blog/index.xml">RSS</a> | <a href="http://feeds.feedburner.com/dplayzgamesblog">Feedburner Feed</a></td></tr>
 				<tr><th><img src="../images/msgr.png"></th><td><a href="http://m.me/dplayzgames06">/dplayzgames06</a></td></tr>
 				<tr><th><img src="../images/dscrd.png"></th><td><a href="https://discord.gg/zj88wBrENV">/zj88wBrENV</a></td></tr>
 			</table>
-		{{< /collapsible >}}
+		{{< /infopage/collapsible >}}
 	<br>
 	<br>
 	<br>
