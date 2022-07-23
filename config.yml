@@ -18,6 +18,8 @@ params:
   relatedArticle: 
     enable: true
     articleSnippetStyle: listStyle
+  pwa:
+    customSplashImage: "/images/splash.png"
   copyrightyearStarted: 2021 
   copyrightyearToday: 2022
   copyrightHolder: dplayz Games
@@ -61,3 +63,9 @@ menu:
     params: 
       url: https://workstation.dplayzgames06.tk
     weight: 4
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - MANIFEST
