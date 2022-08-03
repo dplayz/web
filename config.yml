@@ -4,12 +4,43 @@ title: dplayz Games
 theme: codenamecore
 params:
   description: The official website of dplayz Games where information about him are posted.
-  pagePreviewImage: /images/preview.png
   author: dplayzgames06
-
+  theme:
+    linkcolor: 
+      main: "lightblue"
+      visited: "lightslategrey"
+    background:
+      color:
+        type: lineargradient
+        lightdarkscheme: "true"
+        light:
+          left:
+            color: "#0813fd"
+            position: "24%"
+          right:
+            color: "#2d8bfc"
+            position: "69%"
+        dark:
+          left:
+            color: "#0810ba"
+            position: "24%"
+          right:
+            color: "#1e60af"
+            position: "69%"
+    font:
+      family: "BloggerSans, Roboto, Helvetica, Arial, sans-serif"
+      custom:
+        - family: BloggerSans
+          url: "/fonts/Blogger_Sans.otf"
+    pagePreviewImage: /images/preview.png
+  comments:
+    enable: true
+    disqusShortName: dplayz-games
   fbSDKID: 2932203920349027
   onesignalSDKID: c297670d-63a2-4232-8f52-a8602fdffc33
-
+  comments:
+    enable: true
+    disqusShortName: worldofsteelcraft
   devBranchNotice:
     enable: true
     bugReportURL: https://github.com/dplayz/codenamecore
@@ -20,15 +51,59 @@ params:
     articleSnippetStyle: listStyle
   pwa:
     customSplashImage: "/images/splash.png"
-  copyrightyearStarted: 2021 
-  copyrightyearToday: 2022
-  copyrightHolder: dplayz Games
-  copyrightNotes: Elements of this website are owned by dplayz Games. Other third party copyrighted content are owned by their respective owners.
+  copyright:
+    start: 2021
+    today: 2022
+    rightholder: "dplayz Games"
+    notes: Elements of this website are owned by dplayz Games unless otherwise noted.
+  cms:
+    backend:
+      name: git-gateway
+      branch: main
+    editorial_workflow: true
+    media_folder: "static/uploads"
+    public_folder: "uploads"
+    display_url: "https://dplayzgames06.tk"
+    logo_url: "/images/logo.png"
+    collections: 
+      - name: "blog"
+        label: Blog
+        folder: "content/blog"
+        create: true
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+        fields: 
+          - label: "Title"
+            name: title
+            type: "string"
+          - label : "Publish Date"
+            name: date
+            type: datetime
+            picker_utc: "false"
+          - label: Body
+            name: body
+            type: markdown
+          - label: "Custom Preview Image"
+            name: customPagePreview
+            type: "image"
+            required: "false"
+            default: "/images/preview.png"
+          - label: "Exclude from Sitemap"
+            name: sitemapExclude
+            type: boolean
+            required: "false"
+            default: "true"
+          - label: "Blog Author"
+            name: author
+            type: list
+            required: "true"
+          - label: "Hide from Public"
+            name: featured
+            type: "boolean"
+            default: "true"
 enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-disqusShortName: dplayz-games
 
 taxonomies:
   category : categories
@@ -69,3 +144,4 @@ outputs:
     - HTML
     - RSS
     - MANIFEST
+    - CMSCONFIG

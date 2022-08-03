@@ -3,7 +3,6 @@ singlepage: true
 ---
 {{< html >}}
 <img src="../images/logo.png"  class="style-exclude" width="240px" style="margin-top:2%;">	
-</div>
 <br>
     <a class="button" href="/info">Info</a><a class="button" href="/blog">Blog</a>
     </br>
