@@ -99,8 +99,9 @@ infopage: true
 						<tr><th>NMIXX</th><td>[🇵🇭NSWER]dp</td></tr>
 						</table>
 				{{< /infopage/collapsible >}}
-				{{< infopage/collapsible "SMEnt's Lysn" >}}
+				{{< infopage/collapsible "SMEnt's Lysn[Community Services Discontinued]" >}}
 					<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
+						<tr><td colspan="2">Community Services is now discontinued, anytime soon I'll remove this</td></tr>
 						<tr><th>RED VELVET</th><td>[🇵🇭REVELUV]dp</td></tr>
 					</table>
 				{{< /infopage/collapsible >}}
