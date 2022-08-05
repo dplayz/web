@@ -1,9 +1,6 @@
 /styles/*.css
     cache-control: public
     cache-control: max-age=31536000
-/scripts/*
-    cache-control: public
-    cache-control: max-age=604800
 /images/*
 	cache-control: public
 	cache-control: max-age=86400
