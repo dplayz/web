@@ -1,0 +1,6 @@
+/styles/*
+    cache-control: public
+    cache-control: max-age=31536000
+/images/*
+	cache-control: public
+	cache-control: max-age=86400
