@@ -56,50 +56,6 @@ params:
     today: 2022
     rightholder: "dplayz Games"
     notes: Elements of this website are owned by dplayz Games unless otherwise noted.
-  cms:
-    backend:
-      name: git-gateway
-      branch: main
-    editorial_workflow: true
-    media_folder: "static/uploads"
-    public_folder: "uploads"
-    display_url: "https://dplayzgames06.tk"
-    logo_url: "/images/logo.png"
-    collections: 
-      - name: "blog"
-        label: Blog
-        folder: "content/blog"
-        create: true
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-        fields: 
-          - label: "Title"
-            name: title
-            type: "string"
-          - label : "Publish Date"
-            name: date
-            type: datetime
-            picker_utc: "false"
-          - label: Body
-            name: body
-            type: markdown
-          - label: "Custom Preview Image"
-            name: customPagePreview
-            type: "image"
-            required: "false"
-            default: "/images/preview.png"
-          - label: "Exclude from Sitemap"
-            name: sitemapExclude
-            type: boolean
-            required: "false"
-            default: "true"
-          - label: "Blog Author"
-            name: author
-            type: list
-            required: "true"
-          - label: "Hide from Public"
-            name: featured
-            type: "boolean"
-            default: "true"
 enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
@@ -144,4 +100,3 @@ outputs:
     - HTML
     - RSS
     - MANIFEST
-    - CMSCONFIG
