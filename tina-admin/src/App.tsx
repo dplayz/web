@@ -5,7 +5,7 @@ function App() {
   setEditing(true);
 
   const branch = "main";
-  const clientId = "";
+  const clientId = "775544bb-5e52-4b8c-99b0-7f9e91d35a5c";
   const apiURL =
     process.env.NODE_ENV == "development"
       ? "http://localhost:4001/graphql"
