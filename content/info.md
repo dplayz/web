@@ -32,12 +32,8 @@ infopage: true
 					<tr style="border-top:none; border-bottom:none;"><th><img src="/images/osudroid.png"></th><td><a href="https://osudroid.moe/profile.php?uid=279686">/profile.php?uid=279686</a></td></tr>
 					<tr style="border-top:none;"><th>Sakuru Server</th><td><a href="https://sakuru.pw/u/1092">/u/1092</a></td></tr>
 					<tr><th>CODM Garena</th><td>ID: 6927221836920913921</td></tr>
-					<tr style="border-bottom:none;"><th>Superstar Games</th></tr>
-					<tr style="border-top:none; border-bottom:none;"><th>Superstar JYPNation</th><td>diipii</td></tr>
-					<tr style="border-top:none; border-bottom:none;"><th>Superstar CLASS:Y</th><td>diipii</td></tr>
-					<tr style="border-top:none;"><th>Superstar STARSHIP</th><td>diipii</td></tr>	
 				</table>
-				<b>Inactive player of these games/platform</b>
+				{{< infopage/collapsible "Inactive player of these games" >}}
 				<table style="margin-left:auto; margin-right:auto;" class="no-table-border">
 					<tr style="border-bottom:none;"><th>Minecraft</th></tr>
 					<tr style="border-top:none;"><th>Java Edition(TLauncher)</th><td><td>dpG06</td></tr>
@@ -45,8 +41,12 @@ infopage: true
 					<tr><th><img src="/images/rblx.png"></th><td><a href="https://www.roblox.com/users/650986696/profile">/users/650986696/profile</a></td></tr>
 					<tr><th>Superstar Games</th></tr>
 					<tr style="border-top:none; border-bottom:none;"><th>Superstar SMTOWN</th><td>diipii</td></tr>
+					<tr style="border-top:none; border-bottom:none;"><th>Superstar JYPNation</th><td>diipii</td></tr>
+					<tr style="border-top:none; border-bottom:none;"><th>Superstar CLASS:Y</th><td>diipii</td></tr>
+					<tr style="border-top:none; border-bottom:none;"><th>Superstar STARSHIP</th><td>diipii</td></tr>	
 					<tr style="border-top:none;"><th>Superstar GFRIEND<br>(Because the game is now ended)</th><td>diipii</td></tr>
 				</table>
+				{{</ infopage/collapsible >}}
 			{{</ infopage/collapsible>}}
 		{{< /dynamicContent >}}
 		{{< infopage/collapsible "My other accounts" >}}
