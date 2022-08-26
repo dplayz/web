@@ -100,3 +100,10 @@ outputs:
     - HTML
     - RSS
     - MANIFEST
+
+module:
+  mounts:
+  - source: data
+    target: data
+  - source: readFile
+    target: data
