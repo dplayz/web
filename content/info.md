@@ -21,9 +21,16 @@ infopage: true
     {{< infopage/sns/instagram "https://instagram.com/dplayzgames06" >}}
 	</br>	
 	
-
-
 {{</ infopage/sns >}}
+	{{<infopage/collapsible "Introduction">}}
+		{{< readFile "/readFile/info/introduction.md" markdownify>}}
+		{{< dynamicContent introductionAsAKPopFan >}}
+			{{<infopage/collapsible "Introduction as a K-Pop Fan">}}
+				{{< readFile "/readFile/info/introduction-kpopfan.md" markdownify>}}
+			{{</infopage/collapsible>}}
+		{{</dynamicContent>}}
+	{{</infopage/collapsible>}}
+<br>
 <br>
 		{{< dynamicContent gameID >}}
 			{{< infopage/collapsible "Play With Me!" >}}
