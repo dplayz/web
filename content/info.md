@@ -57,9 +57,6 @@ infopage: true
 				{{< infopage/collapsible "JYPE Fans" >}}
 						{{< readFile "/readFile/info/kpop-ids-jype_fans.md" markdownify>}}
 				{{< /infopage/collapsible >}}
-				{{< infopage/collapsible "SMEnt's Lysn[Community Services Discontinued]" >}}
-						{{< readFile "/readFile/info/kpop-ids-lysn.md" markdownify>}}
-				{{< /infopage/collapsible >}}
 			{{< /infopage/collapsible >}}
 		{{< /dynamicContent >}}
 		{{< infopage/collapsible "Contact Info" >}}
