@@ -1,7 +1,11 @@
-| Game | Username | 
-|---------------------------|-------------|
-| Minecraft: Bedrock Edition | dpG064539    |
-| {{<html>}}<img src="/images/osu.png"> {{</html>}}                | /users/19989687         |
-|  {{<html>}}<img src="/images/osudroid.png"> {{</html>}}               | /profile.php?uid=279686 |
-| Sakuru Server   | /u/1092                 |
-| CODM Garena     | ID: 6927221836920913921 |
+{{<infopage/link name="Minecraft: Bedrock Edition : dpG064539" >}}
+
+{{<infopage/link name="osu!: dpG06" link="https://osu.ppy.sh/users/19989687">}}
+
+{{<infopage/link name="osu!droid: dpG06" link="https://osudroid.moe/profile.php?uid=279686">}}
+
+{{<infopage/link name="osu!Sakuru Server : dpG06" link="https://sakuru.pw/u/1092">}}
+
+{{<infopage/link name="Genshin Impact[TW,HK,MO Server]: 906095596" >}}
+
+{{<infopage/link name="CODM Garena: 6927221836920913921" >}}

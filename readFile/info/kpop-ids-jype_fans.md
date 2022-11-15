@@ -1,5 +1,5 @@
-| Channels | Nicknames     | 
-|----------|---------------|
-| TWICE    | [🇵🇭ONCE]dp    |
-| ITZY     | [🇵🇭MIDZY]dp   |
-| NMIXX    | [🇵🇭NSWER]dp   |
+{{<infopage/link name="TWICE: [🇵🇭ONCE]dp" >}}
+
+{{<infopage/link name="ITZY: [🇵🇭MIDZY]dp" >}}
+
+{{<infopage/link name="TWICE: [🇵🇭NSWER]dp" >}}

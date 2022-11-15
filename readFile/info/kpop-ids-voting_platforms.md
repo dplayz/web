@@ -1,4 +1,3 @@
-| Platforms                      | Username | 
-|--------------------------------|----------|
-| Idol Champ                     | diiipiii |
-| Star Planet(Formerly Starpass) | diipii   |
+{{<infopage/link name="Idol Champ : diiipiii" >}}
+
+{{<infopage/link name="Star Planet(Formerly Starpass): diipii" >}}
