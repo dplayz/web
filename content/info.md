@@ -43,6 +43,9 @@ infopage: true
 		{{< infopage/collapsible "My other accounts" >}}
 			{{< readFile "/readFile/info/1_otheraccounts.md" markdownify>}}
 		{{< /infopage/collapsible >}}
+		{{< infopage/collapsible "Media Monitor Accounts" >}}
+			{{< readFile "/readFile/info/medialist-id.md" markdownify>}}
+		{{< /infopage/collapsible >}}
 		{{< dynamicContent kpopID >}}
 			{{< infopage/collapsible "Kpop-Related Accounts" >}}
 				{{< infopage/collapsible "VLIVE-WEVERSE" >}}	
