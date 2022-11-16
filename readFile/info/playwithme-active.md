@@ -8,4 +8,3 @@
 
 {{<infopage/link name="Genshin Impact[TW,HK,MO Server]: 906095596" >}}
 
-{{<infopage/link name="CODM Garena: 6927221836920913921" >}}
