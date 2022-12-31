@@ -53,7 +53,7 @@ params:
     customSplashImage: "/images/splash.png"
   copyright:
     start: 2021
-    today: 2022
+    today: 2023
     rightholder: "dplayz Games"
     notes: Elements of this website are owned by dplayz Games unless otherwise noted.
 enableRobotsTXT: false
