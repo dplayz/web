@@ -1,104 +1,142 @@
-baseURL: 'https://dplayzgames06.tk/'
 languageCode: en-us
-title: dplayz Games
-theme: codenamecore
 params:
-  description: The official website of dplayz Games where information about him are posted.
-  author: dplayzgames06
+  sectionList:
+    articleSnippetStyle: listStyle
+  onesignalSDKID: c297670d-63a2-4232-8f52-a8602fdffc33
+  copyright:
+    start: 2021
+    today: 2023
+    rightholder: dplayz Games
+    notes: Elements of this website are owned by dplayz Games unless otherwise noted.
+    managedByWhom: Managed by dplayz Games
+  cms:
+    backend:
+      name: github
+      github:
+        repo: dplayz/web
+        branch: main
+        useGraphQL: true
+        auth_endpoint: /api/auth
+    media_folder: images
+    public_folder: static/images
+    logo_url: null
   theme:
-    linkcolor: 
-      main: "lightblue"
-      visited: "lightslategrey"
+    linkcolor:
+      main: lightblue
+      visited: lightslategrey
     background:
       color:
         type: lineargradient
-        lightdarkscheme: "true"
+        lightdarktheme: true
         light:
           left:
             color: "#0813fd"
-            position: "24%"
+            position: 24%
           right:
             color: "#2d8bfc"
-            position: "69%"
+            position: 69%
         dark:
           left:
             color: "#0810ba"
-            position: "24%"
+            position: 24%
           right:
             color: "#1e60af"
-            position: "69%"
+            position: 69%
+        lineargradient:
+          light:
+            left:
+              color: "#0813fd"
+              position: 24%
+            right:
+              color: "#2d8bfc"
+              position: 69%
     font:
-      family: "BloggerSans, Roboto, Helvetica, Arial, sans-serif"
+      family: BloggerSans, Roboto, Helvetica, Arial, sans-serif
       custom:
         - family: BloggerSans
-          url: "/fonts/Blogger_Sans.otf"
+          url: /fonts/Blogger_Sans.otf
     pagePreviewImage: /images/preview.png
+    list:
+      relatedArticle:
+        enable: true
+        articleSnippetStyle: listStyle
+      sectionList:
+        articleSnippetStyle: listStyle
+    textColor:
+      noDarkMode: true
+  author: dplayzgames06
+  relatedArticle:
+    enable: true
+    articleSnippetStyle: listStyle
+  disableFeature:
+    IEChecks: false
+    googlePlatformSDK: false
+  devBranchNotice:
+    enable: true
+    bugReportURL: https://github.com/dplayz/codenamecore
   comments:
     enable: true
     disqusShortName: dplayz-games
   fbSDKID: 2932203920349027
-  onesignalSDKID: c297670d-63a2-4232-8f52-a8602fdffc33
-  comments:
-    enable: true
-    disqusShortName: worldofsteelcraft
-  devBranchNotice:
-    enable: true
-    bugReportURL: https://github.com/dplayz/codenamecore
-  sectionList: 
-    articleSnippetStyle: listStyle
-  relatedArticle: 
-    enable: true
-    articleSnippetStyle: listStyle
   pwa:
-    customSplashImage: "/images/splash.png"
-  copyright:
-    start: 2021
-    today: 2023
-    rightholder: "dplayz Games"
-    notes: Elements of this website are owned by dplayz Games unless otherwise noted.
-enableRobotsTXT: false
+    customSplashImage: /images/splash.png
+  description: The official website of dplayz Games where information about him are posted.
+  identity:
+    sdk:
+      onesignalSDKID: c297670d-63a2-4232-8f52-a8602fdffc33
+      fbSDKID: "2932203920349027"
+    general:
+      logo: /images/logo.png
+      description: The official website of dplayz Games where information about him
+        are posted.
+      defaultAuthor:
+        name: dplayzgames06
+      pagePreviewImage: /images/preview.png
+enableRobotsTXT: true
 buildDrafts: false
-buildFuture: false
-buildExpired: false
-
-taxonomies:
-  category : categories
-  tag : tags
-
 markup:
   tableOfContents:
     endLevel: 3
     ordered: false
     startLevel: 2
-
-timeZone: "Asia/Manila"
+theme: codenamecore
+module:
+  mounts:
+    - source: data
+      target: data
+    - source: readFile
+      target: data
+taxonomies:
+  category: categories
+  tag: tags
+baseURL: https://dplayzgames06.tk
+title: dplayz Games
+enableGitInfo: true
 menu:
   main:
-  - identifier: Info
-    name: Info
-    params: 
-      url: /info
-    weight: 1
-  - identifier: svcstats
-    name: Status
-    params: 
-      url: https://status.dplayzgames06.tk
-    weight: 2
-  - identifier: workstationsvc
-    name: Workstation
-    params: 
-      url: https://workstation.dplayzgames06.tk
-    weight: 3
-
+    - identifier: Info
+      name: Info
+      params:
+        url: /info
+      weight: 1
+    - identifier: svcstats
+      name: Status
+      params:
+        url: https://status.dplayzgames06.tk
+      weight: 2
+    - name: Workstation
+      identifier: workstationsvc
+      weight: 3
+      params:
+        url: https:///workstation.dplayzgames06.tk
+    - identifier: projectshowcasesvc
+      name: Projects(Soon)
+      params:
+        url: https://projects.dplayzgames06.tk
+      weight: 4
 outputs:
   home:
     - HTML
     - RSS
+    - CMSCONFIG
     - MANIFEST
-
-module:
-  mounts:
-  - source: data
-    target: data
-  - source: readFile
-    target: data
