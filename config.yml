@@ -15,11 +15,17 @@ params:
       github:
         repo: dplayz/web
         branch: main
-        useGraphQL: true
+        useGraphQL: false
         auth_endpoint: /api/auth
     media_folder: images
     public_folder: static/images
     logo_url: null
+    collections:
+      - folder: readFile/info
+        create: true
+        useDefaultFields: true
+        label: infopage
+        name: infopage
   theme:
     linkcolor:
       main: lightblue
@@ -50,6 +56,12 @@ params:
             right:
               color: "#2d8bfc"
               position: 69%
+          dark:
+            left:
+              position: 10%
+            right:
+              position: 50%
+        lightdarkscheme: false
     font:
       family: BloggerSans, Roboto, Helvetica, Arial, sans-serif
       custom:
@@ -71,6 +83,11 @@ params:
   disableFeature:
     IEChecks: false
     googlePlatformSDK: false
+    googleTranslate: false
+    widgetbotcrate: false
+    onesignalSDK: false
+    fbSDK: false
+    twitterSDK: false
   devBranchNotice:
     enable: true
     bugReportURL: https://github.com/dplayz/codenamecore
@@ -92,6 +109,12 @@ params:
       defaultAuthor:
         name: dplayzgames06
       pagePreviewImage: /images/preview.png
+      favicon: favicon.ico
+    webmaster:
+      noIndexAll: false
+    analytics:
+      googleAnalytics:
+        disablePageView: false
 enableRobotsTXT: true
 buildDrafts: false
 markup:
