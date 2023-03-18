@@ -19,7 +19,7 @@ These are the dependencies and needs of this website.
 - [codenamecore Theme](https://github.com/dplayz/codenamecore)
   - [Disqus](https://disqus.com)
   - [Static CMS](https://staticcms.org)
-
+- [i40west/netlify-cms-cloudflare-pages](https://github.com/i40west/netlify-cms-cloudflare-pages)
 
 ## Contact Information:
 Please check [dplayz Games README.md](https://github.com/dplayz/dplayz) for more information
