@@ -18,7 +18,8 @@ These are the dependencies and needs of this website.
 - [Hugo](https://gohugo.io)
 - [codenamecore Theme](https://github.com/dplayz/codenamecore)
   - [Disqus](https://disqus.com)
-  - [Netlify CMS](https://netlifycms.org)
+  - [Static CMS](https://staticcms.org)
+
 
 ## Contact Information:
 Please check [dplayz Games README.md](https://github.com/dplayz/dplayz) for more information
