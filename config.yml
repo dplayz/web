@@ -23,8 +23,8 @@ params:
     collections:
       - folder: readFile/info
         create: true
-        useDefaultFields: true
-        label: infopage
+        fieldType: markdownOnly
+        label: Info Page Fragmented Files
         name: infopage
   theme:
     linkcolor:
