@@ -115,6 +115,13 @@ params:
     analytics:
       googleAnalytics:
         disablePageView: false
+  psa:
+    enable: true
+    entries:
+      - oneTime: true
+        id: testground-notice-1
+        content: This site is being used as test ground for my own theme, expect constant and (not so) breaking changes
+        buttonText: Alright
 enableRobotsTXT: true
 buildDrafts: false
 markup:
