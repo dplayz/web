@@ -58,6 +58,9 @@ infopage: true
 				{{< infopage/collapsible "JYPE Fans" >}}
 						{{< readFile "/readFile/info/kpop-ids-jype_fans.md" markdownify>}}
 				{{< /infopage/collapsible >}}
+				{{< infopage/collapsible name="tripleS's Cosmo" >}}
+					{{<readFile "/readFile/info/kpop-ids-cosmo.md" markdownify>}}
+				{{< /infopage/collapsible >}}
 			{{< /infopage/collapsible >}}
 		{{< /dynamicContent >}}
 		{{< infopage/collapsible iconClass="fa-solid fa-address-card" name="Contact Info" >}}
