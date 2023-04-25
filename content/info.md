@@ -46,8 +46,8 @@ infopage: true
 		{{< /infopage/collapsible >}}
 		{{< dynamicContent kpopID >}}
 			{{< infopage/collapsible iconClass="fa-solid fa-heart" name="Kpop-Related Accounts" >}}
-				{{< infopage/collapsible "VLIVE-WEVERSE" >}}	
-					{{< readFile "/readFile/info/kpop-ids-vlive_weverse.md" markdownify>}}
+				{{< infopage/collapsible "Weverse-Phoning" >}}	
+					{{< readFile "/readFile/info/kpop-ids-weverse-phoning.md" markdownify>}}
 				{{< /infopage/collapsible >}}
 				{{< infopage/collapsible "Daum Cafe" >}}
 						{{< readFile "/readFile/info/kpop-ids-daum_cafe.md" markdownify>}}
