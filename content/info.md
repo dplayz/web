@@ -11,21 +11,19 @@ infopage: true
 {{< html >}}
 {{< infopage/profile-gravatar "dp@dplayzgames06.tk" >}}
 {{< infopage/sns >}}
-    {{< infopage/sns/facebook "https://facebook.com/dplayzgames06" >}}
-	{{< infopage/sns/twitch "https://twitch.tv/dplayzgames06" >}}
-	{{< infopage/sns/youtube "https://youtube.com/channel/UCNTjCvAvlLzmEKIZQ5BpoGQ" >}}
-	{{< infopage/sns/youtube "https://youtube.com/channel/UCRYtnbYg1N9AKS7LQ88N5Qg" >}}
-    {{< infopage/sns/medal "https://medal.tv/u/dplayzgames06" >}}
-	{{< infopage/sns/twitter "https://twitter.com/dplayzgames06" >}}
-	{{< infopage/sns/tiktok "https://tiktok.com/@dplayzgames06" >}}
-    {{< infopage/sns/instagram "https://instagram.com/dplayzgames06" >}}
-	</br>	
-	
+    {{< infopage/sns/icon iconClass="fa-brands fa-facebook" link="https://facebook.com/dplayzgames06" >}}
+	{{< infopage/sns/icon iconClass="fa-brands fa-twitch" link="https://twitch.tv/dplayzgames06" >}}
+	{{< infopage/sns/icon iconClass="fa-brands fa-youtube" link="https://youtube.com/channel/UCNTjCvAvlLzmEKIZQ5BpoGQ" >}}
+	{{< infopage/sns/icon link="https://youtube.com/channel/UCRYtnbYg1N9AKS7LQ88N5Qg" >}}
+    {{< infopage/sns/icon iconSrc="https://medal.tv/favicon.ico" link="https://medal.tv/u/dplayzgames06" >}}
+	{{< infopage/sns/icon iconClass="fa-brands fa-twitter" link="https://twitter.com/dplayzgames06" >}}
+	{{< infopage/sns/icon  iconClass="fa-brands fa-instagram" link="https://tiktok.com/@dplayzgames06" >}}
+    {{< infopage/sns/icon "https://instagram.com/dplayzgames06" >}}
 {{</ infopage/sns >}}
-	{{<infopage/collapsible "Introduction">}}
+	{{<infopage/collapsible name="Introduction" iconClass="fa-solid fa-info-circle">}}
 		{{< readFile "/readFile/info/introduction.md" markdownify>}}
 		{{< dynamicContent introductionAsAKPopFan >}}
-			{{<infopage/collapsible "Introduction as a K-Pop Fan">}}
+			{{<infopage/collapsible iconClass="fa-solid fa-heart" name="Introduction as a K-Pop Fan">}}
 				{{< readFile "/readFile/info/introduction-kpopfan.md" markdownify>}}
 			{{</infopage/collapsible>}}
 		{{</dynamicContent>}}
@@ -33,21 +31,21 @@ infopage: true
 <br>
 <br>
 		{{< dynamicContent gameID >}}
-			{{< infopage/collapsible "Play With Me!" >}}
+			{{< infopage/collapsible iconClass="fa-solid fa-gamepad" name="Play With Me!" >}}
 				{{< readFile "/readFile/info/playwithme-active.md" markdownify>}}
 				{{< infopage/collapsible "Inactive player of these games" >}}
 					{{< readFile "/readFile/info/playwithme-inactive.md" markdownify>}}
 				{{</ infopage/collapsible >}}
 			{{</ infopage/collapsible>}}
 		{{< /dynamicContent >}}
-		{{< infopage/collapsible "My other accounts" >}}
+		{{< infopage/collapsible name="My other accounts" iconClass="fa-solid fa-user">}}
 			{{< readFile "/readFile/info/1_otheraccounts.md" markdownify>}}
 		{{< /infopage/collapsible >}}
-		{{< infopage/collapsible "Media Monitor Accounts" >}}
+		{{< infopage/collapsible iconClass="fa-solid fa-play" name="Media Monitor Accounts" >}}
 			{{< readFile "/readFile/info/medialist-id.md" markdownify>}}
 		{{< /infopage/collapsible >}}
 		{{< dynamicContent kpopID >}}
-			{{< infopage/collapsible "Kpop-Related Accounts" >}}
+			{{< infopage/collapsible iconClass="fa-solid fa-heart" name="Kpop-Related Accounts" >}}
 				{{< infopage/collapsible "VLIVE-WEVERSE" >}}	
 					{{< readFile "/readFile/info/kpop-ids-vlive_weverse.md" markdownify>}}
 				{{< /infopage/collapsible >}}
@@ -62,7 +60,7 @@ infopage: true
 				{{< /infopage/collapsible >}}
 			{{< /infopage/collapsible >}}
 		{{< /dynamicContent >}}
-		{{< infopage/collapsible "Contact Info" >}}
+		{{< infopage/collapsible iconClass="fa-solid fa-address-card" name="Contact Info" >}}
 			{{<readFile "/readFile/info/contactinfo.md" markdownify>}}
 		{{< /infopage/collapsible >}}
 	<br>

@@ -76,6 +76,14 @@ params:
         articleSnippetStyle: listStyle
     textColor:
       noDarkMode: true
+    iconFonts:
+      fontawesome:
+        enable: true
+        type: cdnjs
+        kits:
+          kitName: "0"
+        cdnjs:
+          version: 6.4.2
   author: dplayzgames06
   relatedArticle:
     enable: true
@@ -120,7 +128,8 @@ params:
     entries:
       - oneTime: true
         id: testground-notice-1
-        content: This site is being used as test ground for my own theme, expect constant and (not so) breaking changes
+        content: This site is being used as test ground for my own theme, expect
+          constant and (not so) breaking changes
         buttonText: Alright
 enableRobotsTXT: true
 buildDrafts: false
