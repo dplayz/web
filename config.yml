@@ -157,21 +157,26 @@ menu:
       name: Info
       params:
         url: /info
+        iconClass: fa-solid fa-info-circle
       weight: 1
     - identifier: svcstats
       name: Status
       params:
         url: https://status.dplayzgames06.tk
+        iconClass: fa-solid fa-angles-up
       weight: 2
     - name: Workstation
       identifier: workstationsvc
       weight: 3
       params:
         url: https:///workstation.dplayzgames06.tk
+        iconClass: fa-solid fa-list-check
+      parent: ""
     - identifier: projectshowcasesvc
       name: Projects(Soon)
       params:
         url: https://projects.dplayzgames06.tk
+        iconClass: fa-solid fa-clipboard-list
       weight: 4
 outputs:
   home:
