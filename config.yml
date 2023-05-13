@@ -84,6 +84,9 @@ params:
           kitName: "0"
         cdnjs:
           version: 6.4.2
+      bootstrapIcons:
+        enable: false
+        type: jsdeliver
   author: dplayzgames06
   relatedArticle:
     enable: true
@@ -127,10 +130,11 @@ params:
     enable: true
     entries:
       - oneTime: true
-        id: testground-notice-1-revision-2
+        id: semi-feature-reference-notice-1
         content: >
-          This site serves as a test ground of my own theme, expect constant and
-          (not so) breaking changes.
+          This site serves as a semi-feature reference of my theme. Expect
+          constant changes. Participate also on the
+          [development](https://github.com/dplayz/codenamecore) if you want
         buttonText: Alright
 enableRobotsTXT: true
 buildDrafts: false
