@@ -119,6 +119,7 @@ params:
         are posted.
       defaultAuthor:
         name: dplayzgames06
+        gravatar: dp@dplayzgames06.tk
       pagePreviewImage: /images/preview.png
       favicon: favicon.ico
     webmaster:
@@ -153,6 +154,7 @@ module:
 taxonomies:
   category: categories
   tag: tags
+  authors: author
 baseURL: https://dplayzgames06.tk
 title: dplayz Games
 enableGitInfo: true
