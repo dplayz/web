@@ -171,6 +171,7 @@ menu:
       params:
         url: https://status.dplayzgames06.tk
         iconClass: fa-solid fa-angles-up
+        openInNewTab: true
       weight: 2
     - name: Workstation
       identifier: workstationsvc
@@ -178,12 +179,14 @@ menu:
       params:
         url: https:///workstation.dplayzgames06.tk
         iconClass: fa-solid fa-list-check
+        openInNewTab: true
       parent: ""
     - identifier: projectshowcasesvc
       name: Projects(Soon)
       params:
         url: https://projects.dplayzgames06.tk
         iconClass: fa-solid fa-clipboard-list
+        openInNewTab: true
       weight: 4
 outputs:
   home:
