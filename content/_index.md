@@ -21,7 +21,7 @@ singlepage: true
       .slides {
         z-index:-99;
         display: flex;
-        overflow-x: hidden;
+        overflow: hidden;
         scroll-behavior: smooth;
         -webkit-overflow-scrolling: touch;
       }
