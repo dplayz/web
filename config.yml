@@ -131,12 +131,16 @@ params:
     enable: true
     entries:
       - oneTime: true
-        id: semi-feature-reference-notice-1
+        id: semi-feature-reference-notice-1-rev-2
         content: >
           This site serves as a semi-feature reference of my theme. Expect
           constant changes. Participate also on the
           [development](https://github.com/dplayz/codenamecore) if you want
         buttonText: Alright
+        details: >
+          This site serves as a *semi-feature reference* of my theme named codenamecore(even the name is experimental and not final).
+          If you find some weird behaviors, bugs, or improvement suggestions, file an issue or PR in [codenamecore repository](https://github.com/dplayz/codenamecore). Feedbacks are appreciated. 
+          Thank you!
 enableRobotsTXT: true
 buildDrafts: false
 markup:
