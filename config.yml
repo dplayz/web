@@ -75,7 +75,7 @@ params:
       sectionList:
         articleSnippetStyle: listStyle
     textColor:
-      noDarkMode: true
+      noDarkMode: false
     iconFonts:
       fontawesome:
         enable: true
@@ -138,9 +138,12 @@ params:
           [development](https://github.com/dplayz/codenamecore) if you want
         buttonText: Alright
         details: >
-          This site serves as a *semi-feature reference* of my theme named codenamecore(even the name is experimental and not final).
-          If you find some weird behaviors, bugs, or improvement suggestions, file an issue or PR in [codenamecore repository](https://github.com/dplayz/codenamecore). Feedbacks are appreciated. 
-          Thank you!
+          This site serves as a *semi-feature reference* of my theme named
+          codenamecore(even the name is experimental and not final). If you find
+          some weird behaviors, bugs, or improvement suggestions, file an issue
+          or PR in [codenamecore
+          repository](https://github.com/dplayz/codenamecore). Feedbacks are
+          appreciated.  Thank you!
 enableRobotsTXT: true
 buildDrafts: false
 markup:
