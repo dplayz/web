@@ -9,6 +9,33 @@ singlepage: true
 infopage: true
 ---
 {{< html >}}
+<style>
+	body.fromwavhaus{
+		background:url(https://i.redd.it/mqr0mw3q36vb1.jpg);
+		background-size:155%;
+		background-position:center;
+	}
+	body.fromwavhaus details.collapsible div.content{
+		background-color:#08090a;
+	}
+	body.fromwavhaus div.infopage{
+		backdrop-filter:blur(5px);
+	}
+	@media (max-width:800px){
+		body.fromwavhaus{
+			background-size:165%;
+		}
+	}
+</style>
+<script>
+	if (urlParamValues.fromwavhaus == "true"){
+		console.log("hello there!")
+		var element = document.getElementById("body");
+		element.classList.add("fromwavhaus");
+	} else if (urlParamValues.displaykpopID == "true"){
+		document.getElementById("body").style.backgroundColor = "#f36196";
+	}
+</script>
 {{< infopage/profile-gravatar "dp@dplayzgames06.tk" >}}
 {{< infopage/sns >}}
     {{< infopage/sns/icon iconClass="fa-brands fa-facebook" link="https://facebook.com/dplayzgames06" >}}
@@ -27,6 +54,9 @@ infopage: true
 				{{< readFile "/readFile/info/introduction-kpopfan.md" markdownify>}}
 			{{</infopage/collapsible>}}
 		{{</dynamicContent>}}
+	{{</infopage/collapsible>}}
+		{{<infopage/collapsible name="What am I doing?" iconClass="fas fa-question-circle">}}
+		{{< readFile "/readFile/info/presence.md" markdownify>}}
 	{{</infopage/collapsible>}}
 <br>
 <br>
