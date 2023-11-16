@@ -87,6 +87,15 @@ params:
       bootstrapIcons:
         enable: false
         type: jsdeliver
+      custom:
+        assets:
+          - enable: true
+            css:
+              - https://dplayz.github.io/icon-font-library/kpop-icons/dpifl-kpop.css
+              - https://dplayz.github.io/icon-font-library/games-icons/dpifl-games.css
+              - https://dplayz.github.io/icon-font-library/kpop-related-icons/dpifl-kpop-related.css
+    sidebar:
+      enable: false
   author: dplayzgames06
   relatedArticle:
     enable: true

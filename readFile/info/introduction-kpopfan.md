@@ -13,7 +13,7 @@ Here's the comprehensive list of my bias according to the priorities and artists
 | |VIVIZ| |
 | |STAYC| |
 | |WJSN| |
-| |woo!ah!| |
+| |woo!ah!| |dpifl-kpop dpifl-kpop-4thgen-gg-tripleS"
 | |Kim Sejeong| |
 | |Jo Yuri| |
 |L1 Support|Yuju| |
