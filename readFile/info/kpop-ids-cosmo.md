@@ -1,1 +1,1 @@
-{{<infopage/link name="Nickname: diipii (0xb49A4Ee816B67953a534D6bd49cb217807182e0C)"iconClass="dpifl-kpop-related dpifl-kpop-related-cosmo">}}
+{{<infopage/link name="Nickname: diiipiii (0xb49A4Ee816B67953a534D6bd49cb217807182e0C)" link="https://nova.gd/@diiipiii/" iconClass="dpifl-kpop-related dpifl-kpop-related-cosmo">}}
