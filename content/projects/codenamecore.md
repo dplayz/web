@@ -44,37 +44,31 @@ An experimental Hugo theme made for personal usage
 {{<homepage/fs-snap-nextAnimatedButton name="Let's start!" icon-class="fa fa-angle-double-down fa-bounce" icon-side="both"/>}}
 <br>
 {{<anchorAnimatedButton href="https://github.com/dplayz/codenamecore" name="Repository" icon-class="fas fa-code-branch" icon-side="left"/>}}
+{{<anchorAnimatedButton href="https://workstation.dplayzgames06.tk/" name="Tasks (Centralized)" icon-class="fas fa-list-check" icon-side="left" color="green"/>}}
+{{<anchorAnimatedButton href="#use-this-theme" name="Use this theme" icon-class="fas fa-download" icon-side="left" color="green"/>}}
 </div>
 {{</homepage/section>}}
 
-
-{{<homepage/section id="testtoo" style="">}}
+{{<homepage/section id="use-this-theme">}}
 {{<md>}}
-# Features
-{{</md>}}   
-    {{<homepage/side-by-side>}}
-        {{<homepage/content>}}
-        <img src="/images/preview.png" width="100%">
-        {{</homepage/content>}}
-        {{<homepage/content >}}
-            <h1>Sample heading 2</h1>
-            <p>Sample description 2</p>
-        {{</homepage/content>}} 
-        {{<homepage/content >}}
-        {{<md>}}
-# Sample heading 2
-Sample description     
-        {{</md>}}
-        {{</homepage/content>}} 
-        {{<homepage/content>}}
-        {{<md>}}
-![Preview Image](/images/preview.png)        
-        {{</md>}}
-        {{</homepage/content>}}
-    {{</homepage/side-by-side>}}
+# Using this theme
+1. Use this theme using submodules:  
+```bash
+git submodule add https://github.com/dplayz/codenamecore 
+```
+2. Editing the config file to use the theme
+```yml
+theme: codenamecore
+```
+```toml
+theme = "codenamecore"
+```
+3. Optional for updates: Update the theme
+```bash
+ git submodule update
+```
+{{</md>}}
 {{</homepage/section>}}
-
-
 
 {{<homepage/section id="contributors">}}
 {{<md>}}
