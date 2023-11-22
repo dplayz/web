@@ -208,5 +208,6 @@ outputs:
   home:
     - HTML
     - RSS
+    - JSON
     - CMSCONFIG
     - MANIFEST
